@@ -47,3 +47,26 @@
     font-size: 38px;
     margin-top: 10px;
 }
+.thumb .image img{
+	max-height: 210px;
+	min-height: 210px;
+}
+#borderBottom {
+	font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    width: 50%;
+    border-bottom: 2px solid #fff;
+    margin-left: 50%;
+  }
+#borderTop {
+	font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    width: 50%;
+    border-top: 2px solid #fff;
+  }
+.thumb p{
+	color: white;
+    font-size: 50px;
+}
