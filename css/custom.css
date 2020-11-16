@@ -1,0 +1,49 @@
+.bar {
+	width: 80%;
+	background: #ddd;
+	margin: 0 auto;
+	margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.load {
+	width: 0%;
+    height: 20px;
+    border-radius: 6px;
+}
+.bars p {
+    font-weight: bold;
+    font-size: initial;
+}
+.bar p{
+	color: black;
+    text-align: center;
+    height: 0px;
+    margin: 0;
+    font-size: 17px;
+}
+
+.btn-box {
+	margin-top: 70px;
+	text-align: center;
+}
+
+.btn {
+	padding: 1em 1.7em;
+	background: #222;
+	color: white;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	filter: brightness(120%);
+}
+.social-icons p a{
+    color: #fff;
+    float: left;
+    font-size: 38px;
+    margin-top: 10px;
+}
