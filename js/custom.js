@@ -38,7 +38,6 @@ function percentage(){
         }
         
         
-        
     }
 }
 function SubForm (){
