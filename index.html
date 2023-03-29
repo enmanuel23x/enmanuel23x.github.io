@@ -1,484 +1,208 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Portfolio</title>
 
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/templatemo-main.css">
-        <link rel="stylesheet" href="css/custom.css">
-
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-        <script src="js/custom.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    </head>
-
-<body>
-    
-    <div class="sequence">
-  
-      <div class="seq-preloader">
-        <svg width="39" height="16" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg" class="seq-preload-indicator"><g fill="#F96D38"><path class="seq-preload-circle seq-preload-circle-1" d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z"/><path class="seq-preload-circle seq-preload-circle-2" d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z"/><path class="seq-preload-circle seq-preload-circle-3" d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z"/></g></svg>
-      </div>
-      
-    </div>
-    
-  
-        <nav>
-          <ul>
-            <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
-            <li><a onclick="percentage()" href="#2"><i class="fa fa-user"></i> <em>Skills</em></a></li>
-            <li><a href="#3"><i class="fa fa-pencil"></i> <em>Experience</em></a></li>
-            <li><a href="#4"><i class="fa fa-image"></i> <em>Projects</em></a></li>
-            <li><a href="#5"><i class="fa fa-envelope"></i> <em>Contact</em></a></li>
-          </ul>
-        </nav>
-        
-        <div class="slides">
-          <div class="slide" id="1">
-            <div class="content first-content">
-              <div class="container-fluid">
-                  <div class="col-md-3">
-                      <div class="author-image"><img src="img/Profile-pic.jpeg" alt="Author Image"></div>
-                  </div>
-                  <div class="col-md-9">
-                      <h2>Enmanuel Leon</h2>
-                      <h3>Computer engineer</h3>
-                      <h4><a href="http://201.249.74.131/" target="blank" >Universidad José Antonio Páez</a></h4>
-                      <p>I am a computer engineer with aloot experience in Nodejs, Python, WordPress MySQL and other things; on several platforms such as Web, Desktop and Android. Always learning a little more.</p>
-                      <div class="main-btn"><a href="#2" onclick="percentage()">Read More</a></div>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide" id="2">
-            <div class="content second-content">
-                <div class="container-fluid">
-                    <div class="col-md-6">
-                        <div class="left-content" style="display: block;">
-                            <h2>Skills</h2>
-                            <div id="skills">
-                                <div class="bars">
-                                    <p>Database Manager</p>
-
-                                    <div class="bar">
-                                        <p>DB2</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>MongoDB</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>MySQL</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>SQLite</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <p>Frontend Frameworks</p>
-
-                                    <div class="bar">
-                                        <p>Angular</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>Django</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>React</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>Vue</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>WordPress</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <p>Programming Languages</p>
-
-                                    <div class="bar">
-                                        <p>Java</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>JavaScript</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>NodeJS</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>PHP</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>Python</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <p>Others </p>
-
-                                    <div class="bar">
-                                        <p>Electron</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>Android Studio</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    <div class="bar">
-                                        <p>React Native</p>
-                                            <div class="load"></div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                      </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="col-md-6">
-                            <div class="left-content" style="display: block;">
-                                <h2>About Me</h2>
-                                <div id="skills">
-                                    <div class="bars">
-                                        <p>Languages</p>
-                                        <ul>
-                                            <li>Spanish: Native</li>
-                                            <li>English: Basic</li>
-                                        </ul>
-                                        <p>Other knowledge</p>
-                                        <ul>
-                                            <li>Operating System (Working on Linux)</li>
-                                            <li>SSL Protocol</li>
-                                            <li>Basic Security Protocols</li>
-                                        </ul>
-                                        <p>DevOps</p>
-                                        <ul>
-                                            <li>AWS</li>
-                                            <li>Google Cloud</li>
-                                            <li>basic Security Protocols</li>
-                                            <li>Nginx</li>
-                                            <li>Azure</li>
-                                            <li>Git</li>
-                                        </ul>
-                                        </div>
-                                    
-                                    </div>
-                                    <div class="main-btn" style="float: right;"><a href="#3">Read More</a></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="slide" id="3">
-            <div class="content third-content">
-                <div class="container-fluid">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="first-section">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="left-content">
-                                                <h2>Freelancer</h2>
-                                                <h3> 06/2019 - 04/2020</h3>
-                                                <p>Programming web pages for small companies and for personal use of some clients.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="right-image">
-                                                <img src="img/articleocw-5d07e6b3790af.jpg" alt="first service">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="second-section">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="left-image">
-                                                <img src="img/first_service.jpg" alt="second service">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="right-content">
-                                                <h2><a href="https://www.intelix.biz/site/public/" target="blank">Intelix Syngergy</a></h2>
-                                                <h3> 04/2020 - Present</h3>
-                                                <p>Programming Web applications as intelligent solutions for customer problems, playing the role of systems analyst</p>
-                                                <div class="main-btn"><a href="#4">Continue Reading</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="slide" id="4">
-            <div class="content fourth-content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/py2js.png" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Translator - Programming languages</h2>
-                                            <p>Translator that converts basic code functions between both languages ​​(JavaScript and Python).</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="img/py2js.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/basic_encryptor.png" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Translator - text to hexadecimal</h2>
-                                            <p>Translator that converts normal text strings into hexadecimal code.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="img/basic_encryptor.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/so.png" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Resource Monitor</h2>
-                                            <p>Small task and resource monitor with basic functions and process queue simulation</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="img/so.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/inventario2.png" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Inventory system - Android</h2>
-                                            <p>Inventory system developed with Android Studio, contains: user and role management, price lists, conversions in other currencies, etc.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="img/inventario2.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/restaurant1.png" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Restaurant online</h2>
-                                            <p>In-house restaurant store for order and inventory management</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="img/restaurant1.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/Devology.png" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Project management platform</h2>
-                                            <p>Collaborative platform for software project management, implementing deep learning algorithms (NodeJS, Vue, Keras, Pytorch, TensorFlow, MongoDB).</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="img/Devology.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/encryptor.png" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Basic AES encryptor</h2>
-                                            <p>
-                                                Basic encryption that uses the AES algorithm, allows decryption, shows the step-by-step process in the interface and is available in multiple languages.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="img/encryptor.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/shop.png" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Appliances Store</h2>
-                                            <p>Home appliance store, visit log, product visit statistics, online purchases and more ...</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="img/shop.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <div id="borderTop"></div>
-                                    <p>More coming soon.</p>
-                                    <div id="borderBottom"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="slide" id="5">
-            <div class="content fifth-content">
-                <div class="container-fluid">
-                    <div class="col-md-6">
-                        <form id="contact" onsubmit="event.preventDefault(); SubForm();">
-                            <div class="row">
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
-                                  </fieldset>
-                                </div>
-                                 <div class="col-md-12">
-                                  <fieldset>
-                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <button class="btn">Send Now</button>
-                                  </fieldset>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="map">
-                            <div class="social-icons" style="display: grid;">
-                                <p class="medium">
-                                  <a href="https://wa.me/58424-4375329" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="0.88em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512" class="iconify" data-icon="fa-brands:whatsapp" data-inline="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222c0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222c0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4l-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2c0-101.7 82.8-184.5 184.6-184.5c49.3 0 95.6 19.2 130.4 54.1c34.8 34.9 56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18c-5.1-1.9-8.8-2.8-12.5 2.8c-3.7 5.6-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4c-32.6-16.3-54-29.1-75.5-66c-5.7-9.8 5.7-9.1 16.3-30.3c1.8-3.7.9-6.9-.5-9.7c-1.4-2.8-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5c-3.2-.2-6.9-.2-10.6-.2c-3.7 0-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3c0 27.3 19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8c35.2 15.2 49 16.5 66.6 13.9c10.7-1.6 32.8-13.4 37.4-26.4c4.6-13 4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z" fill="currentColor"></path></svg><font _mstmutation="1" _msthash="208026" _msttexthash="127270">Whatsapp</font><br></a>
-                                </p>
-                                <p class="medium">
-                                  <a href="https://github.com/enmanuel23x"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024" class="iconify" data-icon="ant-design:github-fill" data-inline="false"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5C64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9c26.4 39.1 77.9 32.5 104 26c5.7-23.5 17.9-44.5 34.7-60.8c-140.6-25.2-199.2-111-199.2-213c0-49.5 16.3-95 48.3-131.7c-20.4-60.5 1.9-112.3 4.9-120c58.1-5.2 118.5 41.6 123.2 45.3c33-8.9 70.7-13.6 112.9-13.6c42.4 0 80.2 4.9 113.5 13.9c11.3-8.6 67.3-48.8 121.3-43.9c2.9 7.7 24.7 58.3 5.5 118c32.4 36.8 48.9 82.7 48.9 132.3c0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9c177.1-59.7 304.6-227 304.6-424.1c0-247.2-200.4-447.3-447.5-447.3z" fill="currentColor"></path></svg><font _mstmutation="1" _msthash="208286" _msttexthash="163579">GitHub</font><br></a>
-                                </p>
-                                <p class="medium">
-                                  <a href="https://t.me/EnmanuelLeon" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" class="iconify" data-icon="ei:sc-telegram" data-inline="false"><path d="M37.1 13L9.4 24c-.9.3-.8 1.6.1 1.9l7 2.2l2.8 8.8c.2.7 1.1.9 1.6.4l4.1-3.8l7.8 5.7c.6.4 1.4.1 1.6-.6l5.4-23.2c.3-1.7-1.2-3-2.7-2.4zM20.9 29.8L20 35l-2-7.2L37.5 15L20.9 29.8z" fill="currentColor"></path></svg><font _mstmutation="1" _msthash="208546" _msttexthash="127270">Telegram</font><br></a>
-                                </p>
-                                <p class="medium">
-                                  <a href="https://www.linkedin.com/in/enmanuel-leon-48b11714b/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512" class="iconify icon:ion-social-linkedin-outline icon-inline:false" data-inline="false" data-icon="ion-social-linkedin-outline"><path d="M182.8 384V212.9h-54.9V384h54.9zm-25.4-197c18.3 0 29.7-13.1 29.7-29.5-.3-16.7-11.4-29.5-29.4-29.5S128 140.8 128 157.5c0 16.4 11.4 29.5 29 29.5h.4z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path><path d="M320.6 209c-29.1 0-41.6 16.4-49.6 27.8V213h-55v171h55v-97.4c0-5 .4-10 1.9-13.5 4-10 13-20.3 28.2-20.3 19.9 0 27.9 15.3 27.9 37.7V384h55v-99.9c0-51.3-27.2-75.1-63.4-75.1z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path><path d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM414 416H99.1c-1.8 0-3.1-1.4-3.1-3.1V98c0-1.1 1-2 2-2h316c1 0 2 1 2 2v316c0 .9-.9 2-2 2z" fill="currentColor"></path></svg><font _mstmutation="1" _msthash="208806" _msttexthash="229060">LinkedIn</font><br></a>
-                                </p>
-                                <p class="medium">
-                                  <a href="mailto: enma2310@outlook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024" class="iconify" data-icon="ant-design:mail-outline" data-inline="false"><path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5l39.3-50.5l42.8 33.3h643.1l42.8-33.3l39.3 50.5l-27.7 21.5zM833.6 232L512 482L190.4 232l-42.8-33.3l-39.3 50.5l27.6 21.5l341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5l-39.3-50.5l-42.7 33.2z" fill="currentColor"></path></svg><font _mstmutation="1" _msthash="209066" _msttexthash="400686">Email</font></a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
- 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-    <script src="js/vendor/bootstrap.min.js"></script>
-    
-    <script src="js/datepicker.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <script type="text/javascript">
-    $(document).ready(function() {
-
-        
-
-        // navigation click actions 
-        $('.scroll-link').on('click', function(event){
-            event.preventDefault();
-            var sectionID = $(this).attr("data-id");
-            scrollToID('#' + sectionID, 750);
-        });
-        // scroll to top action
-        $('.scroll-top').on('click', function(event) {
-            event.preventDefault();
-            $('html, body').animate({scrollTop:0}, 'slow');         
-        });
-        // mobile nav toggle
-        $('#nav-toggle').on('click', function (event) {
-            event.preventDefault();
-            $('#main-nav').toggleClass("open");
-        });
-    });
-    // scroll function
-    function scrollToID(id, speed){
-        var offSet = 0;
-        var targetOffset = $(id).offset().top - offSet;
-        var mainNav = $('#main-nav');
-        $('html,body').animate({scrollTop:targetOffset}, speed);
-        if (mainNav.hasClass("open")) {
-            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-            mainNav.removeClass("open");
+<head>
+    <title>Enmanuel Leon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif
         }
-    }
-    if (typeof console === "undefined") {
-        console = {
-            log: function() { }
-        };
-    }
-    </script>
+    </style>
+</head>
+
+<body class="bg">
+
+    <!-- Page Container -->
+    <div class="content margin-top" style="max-width:1400px;">
+
+        <!-- The Grid -->
+        <div class="row-padding">
+
+            <!-- Left Column -->
+            <div class="third">
+
+                <div class="text text-grey card-4">
+                    <div class="display-container">
+                        <img src="img/Profile-pic.jpeg" style="width:100%" alt="Avatar">
+                        <div class="display-bottomleft container text-black">
+                            <h2 class="title">Enmanuel Leon</h2>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p><i class="fa fa-briefcase fa-fw margin-right large text-teal title"></i>Desarrollador
+                            Fullstack</p>
+                        <p><i class="fa fa-home fa-fw margin-right large text-teal"></i>Madrid, España</p>
+                        <p><a class="not-ud" href="mailto: enma2310@outlook.com" target="_blank"><i
+                                    class="fa fa-envelope fa-fw margin-right large text-teal"></i>enma2310@outlook.com</a>
+                        </p>
+                        <p><a class="not-ud" href="tel: 630418644" target="_blank"><i
+                                    class="fa fa-phone fa-fw margin-right large text-teal"></i>630418644</a></p>
+                        <p><a class="not-ud" href="https://wa.me/34630418644" target="_blank"><i
+                                    class="fa fa-whatsapp  fa-fw margin-right large  hover-opacity text-teal"></i>630418644</a>
+                        </p>
+                        <hr>
+
+                        <p class="large"><b><i class="fa fa-asterisk fa-fw margin-right text-teal"></i>Habilidades</b>
+                        </p>
+                        <p>NodeJs</p>
+                        <div class="bg round-xlarge small">
+                            <div class="container center round-xlarge teal" style="width:90%">90%</div>
+                        </div>
+                        <p>Docker</p>
+                        <div class="bg round-xlarge small">
+                            <div class="container center round-xlarge teal" style="width:70%">70%</div>
+                        </div>
+                        <p>React</p>
+                        <div class="bg round-xlarge small">
+                            <div class="container center round-xlarge teal" style="width:80%">
+                                <div class="center text-text">80%</div>
+                            </div>
+                        </div>
+                        <p>NextJs</p>
+                        <div class="bg round-xlarge small">
+                            <div class="container center round-xlarge teal" style="width:65%">65%</div>
+                        </div>
+                        <p>ExpressJs</p>
+                        <div class="bg round-xlarge small">
+                            <div class="container center round-xlarge teal" style="width:80%">80%</div>
+                        </div>
+                        <p>Lumen</p>
+                        <div class="bg round-xlarge small">
+                            <div class="container center round-xlarge teal" style="width:70%">70%</div>
+                        </div>
+                        <br>
+
+                        <p class="large text-theme"><b><i
+                                    class="fa fa-globe fa-fw margin-right text-teal"></i>Idiomas</b></p>
+                        <p>Español</p>
+                        <div class="bg round-xlarge">
+                            <div class="round-xlarge teal" style="height:24px;width:100%"></div>
+                        </div>
+                        <p>Ingles</p>
+                        <div class="bg round-xlarge">
+                            <div class="round-xlarge teal" style="height:24px;width:55%"></div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="twothird">
+
+                <div class="container card text margin-bottom">
+                    <h2 class="padding-16 title"><i
+                            class="fa fa-suitcase fa-fw margin-right xxlarge text-teal"></i>Experiencia - <div
+                            id="head-exp" class="title"></div>
+                    </h2>
+                    <div class="container">
+                        <h5 class="title"><b>Fullstack Developer / Interfell - ePayco</b></h5>
+                        <h6 class="text-teal"><i class="fa fa-calendar fa-fw margin-right"></i>Jun. 2021 - <span
+                                class="tag teal round">Presente</span></h6>
+                        <ul>
+                            <li>
+                                Mantenimiento y mejoras a las aplicaciones desarrolladas en la empresa
+                            </li>
+                            <li>
+                                Optimización de procesos.</li>
+                            <li>
+                                Mejoras y mantenimientos en diversas aplicaciones basadas en microservicios Rest-API y
+                                Api-Soap.</li>
+                            <li>
+                                Participar en los CodeReview y trabajar en lasintegraciones de SonarQube para
+                                automatizar
+                                las mismasrevisiones.</li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="container">
+                        <h5 class="title"><b>Analista de sistemas / Intelix Synergy, C.A.</b></h5>
+                        <h6 class="text-teal"><i class="fa fa-calendar fa-fw margin-right"></i>Mar. 2020 - Jun. 2021
+                        </h6>
+                        <ul>
+                            <li>
+                                Desarrollo de aplicaciones.</li>
+                            <li>
+                                Implementación de soluciones modernas.</li>
+                            <li>
+                                Mejora de procesos.</li>
+                            <li>
+                                Gestión de proyectos.</li>
+                            <li>
+                                Documentación de aplicaciones (funcionales y técnicas).
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="container card text">
+                    <h2 class="padding-16 title"><i
+                            class="fa fa-certificate fa-fw margin-right xxlarge text-teal"></i>Educación</h2>
+                    <div class="container">
+                        <h5 class="title"><b>Universidad José Antonio Páez | Ingeniería de computación</b></h5>
+                        <h6 class="text-teal"><i class="fa fa-calendar fa-fw margin-right"></i>Mar 2017 - Jul 2020</h6>
+                        <ul>
+                            <li>Planificación, coordinación y ética de proyectos.</li>
+                            <li> Conceptos y habilidades para el desarrollo de
+                                aplicaciones.</li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+
+    <footer class="container center margin-top">
+        <p>
+        <div id="footer-date" class="title"></div>
+        </p>
+    </footer>
+
 </body>
+<script>
+    function calculateYears() {
+        const startDate = new Date('2020-03-01');
+        const endDate = new Date();
+        var diff = new Date(endDate - startDate);
+        var diffResult = ((diff.getFullYear() - 1970) * 12 + diff.getMonth()) / 12;
+        let result = parseInt(diffResult);
+        if (!isInt(diffResult)) {
+            result = result + ` Años, ${Math.round((diffResult - result) * 12)} Meses`;
+        } else {
+            result += " Años";
+        }
+        return result;
+    }
+    function isInt(x) {
+        if (Number.isInteger(x)) {
+            return true;
+        }
+        return false;
+    }
+    document.getElementById('footer-date').appendChild(document.createTextNode(new Date().getFullYear() + " ©"));
+    document.getElementById("head-exp").appendChild(document.createTextNode(calculateYears()))
+</script>
+
 </html>
