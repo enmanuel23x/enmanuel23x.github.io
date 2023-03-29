@@ -14,15 +14,14 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0
 }
 
 footer {
     display: block
 }
 
-[hidden],
-template {
+[hidden] {
     display: none
 }
 
@@ -514,18 +513,18 @@ a {
 .hover-teal:hover,
 .teal {
     color: #323232 !important;
-    background-color: #14FFEC !important;
-    font-weight: bold;
+    background-color: #14ffec !important;
+    font-weight: 700
 }
 
 .hover-text:hover,
 .text {
-    color: #0D7377 !important;
+    color: #0d7377 !important;
     background-color: #323232 !important
 }
 
 .title {
-    color: #14FFEC !important;
+    color: #14ffec !important
 }
 
 .black,
@@ -540,20 +539,15 @@ a {
     background-color: #9e9e9e !important
 }
 
-.hover-bg:hover,
-.bg {
-    color: #0D7377 !important;
+.bg,
+.hover-bg:hover {
+    color: #0d7377 !important;
     background-color: #212121 !important
 }
 
 .hover-text-teal:hover,
 .text-teal {
-    color: #14FFEC !important
-}
-
-.hover-text-dark:hover,
-.text-dark {
-    color: #323232 !important
+    color: #14ffec !important
 }
 
 .hover-text-black:hover,
@@ -571,9 +565,10 @@ a {
     color: #f1f1f1 !important
 }
 
-.not-ud{
-    text-decoration: none;
+.not-ud {
+    text-decoration: none
 }
-footer{
-    background-color: #323232 !important;
+
+footer {
+    background-color: #323232 !important
 }
