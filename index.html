@@ -1,208 +1,789 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Enmanuel Leon</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enmanuel Leon | Senior Fullstack Developer</title>
+    <meta
+      name="description"
+      content="Professional portfolio of Enmanuel Leon - Senior Fullstack Developer specialized in high-performance ecosystems and AI solutions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        html,
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Roboto", sans-serif
+      :root {
+        --bg: #050505;
+        --surface: rgba(255, 255, 255, 0.03);
+        --surface-hover: rgba(255, 255, 255, 0.08);
+        --border: rgba(255, 255, 255, 0.1);
+        --text: #f0f0f0;
+        --text-dim: #a0a0a0;
+        --accent: #14ffec;
+        --accent-glow: rgba(20, 255, 236, 0.3);
+        --glass: blur(12px);
+        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        --terminal-font: "Fira Code", monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        overflow: hidden;
+        height: 100vh;
+        background-image:
+          radial-gradient(
+            circle at 20% 20%,
+            rgba(20, 255, 236, 0.05) 0%,
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 80% 80%,
+            rgba(20, 255, 236, 0.05) 0%,
+            transparent 40%
+          );
+      }
+
+      .lang-switcher {
+        position: fixed;
+        top: 1.5rem;
+        right: 1.5rem;
+        z-index: 100;
+        display: flex;
+        gap: 0.5rem;
+        background: var(--surface);
+        backdrop-filter: var(--glass);
+        padding: 0.4rem;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+      }
+
+      .lang-btn {
+        background: transparent;
+        border: none;
+        color: var(--text-dim);
+        padding: 0.4rem 0.8rem;
+        cursor: pointer;
+        font-family: var(--terminal-font);
+        font-weight: 600;
+        font-size: 0.8rem;
+        border-radius: 8px;
+        transition: var(--transition);
+      }
+
+      .lang-btn.active {
+        background: var(--accent);
+        color: var(--bg);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        gap: 2.5rem;
+        padding: 2rem;
+      }
+
+      @media (max-width: 900px) {
+        body {
+          overflow: auto;
+          height: auto;
         }
+        .container {
+          grid-template-columns: 1fr;
+          height: auto;
+          padding: 1rem;
+          overflow: visible;
+        }
+        .lang-switcher {
+          top: 1rem;
+          right: 1rem;
+        }
+      }
+
+      .sidebar,
+      .main-content {
+        height: 100%;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .sidebar::-webkit-scrollbar,
+      .main-content::-webkit-scrollbar {
+        display: none;
+      }
+
+      .glass-card {
+        background: var(--surface);
+        backdrop-filter: var(--glass);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 2rem;
+        transition: var(--transition);
+      }
+
+      .glass-card:hover {
+        border-color: var(--accent);
+        box-shadow: 0 0 20px var(--accent-glow);
+        transform: translateY(-4px);
+      }
+
+      .profile-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid var(--border);
+        margin-bottom: 1.5rem;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      }
+
+      .name {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+        font-family: var(--terminal-font);
+      }
+      .role {
+        font-size: 1.1rem;
+        color: var(--accent);
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        font-family: var(--terminal-font);
+      }
+
+      .contact-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        color: var(--text-dim);
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: var(--transition);
+      }
+      .contact-item:hover {
+        color: var(--text);
+        transform: translateX(5px);
+      }
+      .contact-item svg {
+        width: 18px;
+        height: 18px;
+        color: var(--accent);
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+        margin-top: 1rem;
+      }
+      .skill-item {
+        background: var(--surface-hover);
+        padding: 0.6rem;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 600;
+        border: 1px solid transparent;
+        transition: var(--transition);
+      }
+      .skill-item:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        background: rgba(20, 255, 236, 0.05);
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .section-header h2 {
+        font-size: 1.4rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-family: var(--terminal-font);
+      }
+      .section-header .line {
+        flex-grow: 1;
+        height: 1px;
+        background: linear-gradient(to right, var(--accent), transparent);
+      }
+
+      .timeline-item {
+        position: relative;
+        padding-left: 1.5rem;
+        border-left: 2px solid var(--border);
+        margin-bottom: 2rem;
+      }
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -7px;
+        top: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--bg);
+        border: 2px solid var(--border);
+      }
+      .timeline-item:hover::before {
+        background: var(--accent);
+        border-color: var(--accent);
+        box-shadow: 0 0 10px var(--accent-glow);
+      }
+
+      .company {
+        color: var(--accent);
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .date-tag {
+        font-size: 0.85rem;
+        color: var(--text-dim);
+        font-weight: 500;
+      }
+      .job-desc {
+        color: var(--text-dim);
+        font-size: 0.95rem;
+        margin-top: 1rem;
+      }
+      .job-desc ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .job-desc li {
+        position: relative;
+        padding-left: 1.2rem;
+        min-height: 1.4em;
+      }
+      .job-desc li::before {
+        content: ">";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-family: var(--terminal-font);
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .exp-badge {
+        display: inline-block;
+        background: var(--accent);
+        color: var(--bg);
+        padding: 0.1rem 0.6rem;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+      }
+
+      .cursor::after {
+        content: "_";
+        animation: blink 1s step-end infinite;
+        color: var(--accent);
+      }
+      @keyframes blink {
+        from,
+        to {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
+      footer {
+        margin-top: 2rem;
+        text-align: center;
+        color: var(--text-dim);
+        font-size: 0.9rem;
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .social-icon {
+        color: var(--text-dim);
+        transition: var(--transition);
+      }
+      .social-icon:hover {
+        color: var(--accent);
+        transform: scale(1.2);
+      }
     </style>
-</head>
-
-<body class="bg">
-
-    <!-- Page Container -->
-    <div class="content margin-top" style="max-width:1400px;">
-
-        <!-- The Grid -->
-        <div class="row-padding">
-
-            <!-- Left Column -->
-            <div class="third">
-
-                <div class="text text-grey card-4">
-                    <div class="display-container">
-                        <img src="img/Profile-pic.jpeg" style="width:100%" alt="Avatar">
-                        <div class="display-bottomleft container text-black">
-                            <h2 class="title">Enmanuel Leon</h2>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <p><i class="fa fa-briefcase fa-fw margin-right large text-teal title"></i>Desarrollador
-                            Fullstack</p>
-                        <p><i class="fa fa-home fa-fw margin-right large text-teal"></i>Madrid, España</p>
-                        <p><a class="not-ud" href="mailto: enma2310@outlook.com" target="_blank"><i
-                                    class="fa fa-envelope fa-fw margin-right large text-teal"></i>enma2310@outlook.com</a>
-                        </p>
-                        <p><a class="not-ud" href="tel: 630418644" target="_blank"><i
-                                    class="fa fa-phone fa-fw margin-right large text-teal"></i>630418644</a></p>
-                        <p><a class="not-ud" href="https://wa.me/34630418644" target="_blank"><i
-                                    class="fa fa-whatsapp  fa-fw margin-right large  hover-opacity text-teal"></i>630418644</a>
-                        </p>
-                        <hr>
-
-                        <p class="large"><b><i class="fa fa-asterisk fa-fw margin-right text-teal"></i>Habilidades</b>
-                        </p>
-                        <p>NodeJs</p>
-                        <div class="bg round-xlarge small">
-                            <div class="container center round-xlarge teal" style="width:90%">90%</div>
-                        </div>
-                        <p>Docker</p>
-                        <div class="bg round-xlarge small">
-                            <div class="container center round-xlarge teal" style="width:70%">70%</div>
-                        </div>
-                        <p>React</p>
-                        <div class="bg round-xlarge small">
-                            <div class="container center round-xlarge teal" style="width:80%">
-                                <div class="center text-text">80%</div>
-                            </div>
-                        </div>
-                        <p>NextJs</p>
-                        <div class="bg round-xlarge small">
-                            <div class="container center round-xlarge teal" style="width:65%">65%</div>
-                        </div>
-                        <p>ExpressJs</p>
-                        <div class="bg round-xlarge small">
-                            <div class="container center round-xlarge teal" style="width:80%">80%</div>
-                        </div>
-                        <p>Lumen</p>
-                        <div class="bg round-xlarge small">
-                            <div class="container center round-xlarge teal" style="width:70%">70%</div>
-                        </div>
-                        <br>
-
-                        <p class="large text-theme"><b><i
-                                    class="fa fa-globe fa-fw margin-right text-teal"></i>Idiomas</b></p>
-                        <p>Español</p>
-                        <div class="bg round-xlarge">
-                            <div class="round-xlarge teal" style="height:24px;width:100%"></div>
-                        </div>
-                        <p>Ingles</p>
-                        <div class="bg round-xlarge">
-                            <div class="round-xlarge teal" style="height:24px;width:55%"></div>
-                        </div>
-                        <br>
-                    </div>
-                </div><br>
-
-                <!-- End Left Column -->
-            </div>
-
-            <!-- Right Column -->
-            <div class="twothird">
-
-                <div class="container card text margin-bottom">
-                    <h2 class="padding-16 title"><i
-                            class="fa fa-suitcase fa-fw margin-right xxlarge text-teal"></i>Experiencia - <div
-                            id="head-exp" class="title"></div>
-                    </h2>
-                    <div class="container">
-                        <h5 class="title"><b>Fullstack Developer / Interfell - ePayco</b></h5>
-                        <h6 class="text-teal"><i class="fa fa-calendar fa-fw margin-right"></i>Jun. 2021 - <span
-                                class="tag teal round">Presente</span></h6>
-                        <ul>
-                            <li>
-                                Mantenimiento y mejoras a las aplicaciones desarrolladas en la empresa
-                            </li>
-                            <li>
-                                Optimización de procesos.</li>
-                            <li>
-                                Mejoras y mantenimientos en diversas aplicaciones basadas en microservicios Rest-API y
-                                Api-Soap.</li>
-                            <li>
-                                Participar en los CodeReview y trabajar en lasintegraciones de SonarQube para
-                                automatizar
-                                las mismasrevisiones.</li>
-                        </ul>
-                        <hr>
-                    </div>
-                    <div class="container">
-                        <h5 class="title"><b>Analista de sistemas / Intelix Synergy, C.A.</b></h5>
-                        <h6 class="text-teal"><i class="fa fa-calendar fa-fw margin-right"></i>Mar. 2020 - Jun. 2021
-                        </h6>
-                        <ul>
-                            <li>
-                                Desarrollo de aplicaciones.</li>
-                            <li>
-                                Implementación de soluciones modernas.</li>
-                            <li>
-                                Mejora de procesos.</li>
-                            <li>
-                                Gestión de proyectos.</li>
-                            <li>
-                                Documentación de aplicaciones (funcionales y técnicas).
-                            </li>
-                        </ul>
-                        <hr>
-                    </div>
-                </div>
-
-                <div class="container card text">
-                    <h2 class="padding-16 title"><i
-                            class="fa fa-certificate fa-fw margin-right xxlarge text-teal"></i>Educación</h2>
-                    <div class="container">
-                        <h5 class="title"><b>Universidad José Antonio Páez | Ingeniería de computación</b></h5>
-                        <h6 class="text-teal"><i class="fa fa-calendar fa-fw margin-right"></i>Mar 2017 - Jul 2020</h6>
-                        <ul>
-                            <li>Planificación, coordinación y ética de proyectos.</li>
-                            <li> Conceptos y habilidades para el desarrollo de
-                                aplicaciones.</li>
-                        </ul>
-                        <hr>
-                    </div>
-                </div>
-
-                <!-- End Right Column -->
-            </div>
-
-            <!-- End Grid -->
-        </div>
-
-        <!-- End Page Container -->
+  </head>
+  <body>
+    <div class="lang-switcher">
+      <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">
+        EN
+      </button>
+      <button class="lang-btn" id="btn-es" onclick="setLanguage('es')">
+        ES
+      </button>
     </div>
 
-    <footer class="container center margin-top">
-        <p>
-        <div id="footer-date" class="title"></div>
-        </p>
-    </footer>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="glass-card profile-section reveal">
+          <img
+            src="img/Profile-pic.jpeg"
+            alt="Enmanuel Leon"
+            class="profile-img"
+          />
+          <h1 class="name">
+            Enmanuel <span style="color: var(--accent)">Leon</span>
+          </h1>
+          <p class="role">Senior Fullstack Developer</p>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:enma2310@outlook.com" class="contact-item"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg
+                >enma2310@outlook.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+34630418644" class="contact-item"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  /></svg
+                >+34 630 418 644</a
+              >
+            </li>
+            <li>
+              <span class="contact-item"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" /></svg
+                ><span data-i18n="location">Madrid, Spain</span></span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="glass-card reveal">
+          <div class="section-header">
+            <h2 data-i18n="skills-title">Technical Stack</h2>
+            <div class="line"></div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">React / Next.js</div>
+            <div class="skill-item">TypeScript</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Docker</div>
+            <div class="skill-item">Express / Fastify</div>
+            <div class="skill-item">PostgreSQL</div>
+            <div class="skill-item">MongoDB</div>
+            <div class="skill-item">Lumen / PHP</div>
+            <div class="skill-item">GenAI / LLMs</div>
+          </div>
+        </div>
+        <div class="glass-card reveal">
+          <div class="section-header">
+            <h2 data-i18n="lang-title">Languages</h2>
+            <div class="line"></div>
+          </div>
+          <div class="job-desc">
+            <p>
+              <strong data-i18n="lang-es">Spanish:</strong>
+              <span data-i18n="lang-es-level">Native</span>
+            </p>
+            <p>
+              <strong data-i18n="lang-en">English:</strong>
+              <span data-i18n="lang-en-level">B2 (Professional)</span>
+            </p>
+          </div>
+        </div>
+      </aside>
+      <main class="main-content">
+        <div class="glass-card reveal">
+          <div class="section-header">
+            <h2 data-i18n="profile-title">Professional Profile</h2>
+            <div class="line"></div>
+          </div>
+          <div class="job-desc"><p id="typewriter-profile"></p></div>
+        </div>
+        <div class="glass-card reveal">
+          <div class="section-header">
+            <h2 data-i18n="exp-title">Professional Journey</h2>
+            <span id="exp-counter" class="exp-badge">...</span>
+            <div class="line"></div>
+          </div>
+          <div class="timeline" id="experience-list"></div>
+        </div>
+        <div class="glass-card reveal">
+          <div class="section-header">
+            <h2 data-i18n="edu-title">Education</h2>
+            <div class="line"></div>
+          </div>
+          <div class="timeline-item">
+            <h3 class="job-title" data-i18n="edu-degree">
+              Computer Engineering
+            </h3>
+            <div class="company">
+              <span>Universidad José Antonio Páez</span
+              ><span class="date-tag">2017 — 2020</span>
+            </div>
+            <div class="job-desc"><p id="typewriter-edu"></p></div>
+          </div>
+        </div>
 
-</body>
-<script>
-    function calculateYears() {
-        const startDate = new Date('2020-03-01');
-        const endDate = new Date();
-        var diff = new Date(endDate - startDate);
-        var diffResult = ((diff.getFullYear() - 1970) * 12 + diff.getMonth()) / 12;
-        let result = parseInt(diffResult);
-        if (!isInt(diffResult)) {
-            result = result + ` Años, ${Math.round((diffResult - result) * 12)} Meses`;
-        } else {
-            result += " Años";
-        }
-        return result;
-    }
-    function isInt(x) {
-        if (Number.isInteger(x)) {
-            return true;
-        }
-        return false;
-    }
-    document.getElementById('footer-date').appendChild(document.createTextNode(new Date().getFullYear() + " ©"));
-    document.getElementById("head-exp").appendChild(document.createTextNode(calculateYears()))
-</script>
+        <footer>
+          <div class="social-links">
+            <a
+              href="https://github.com/enmanuel23x"
+              target="_blank"
+              class="social-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" /></svg
+            ></a>
+            <a
+              href="https://linkedin.com/in/enmanuel-leon"
+              target="_blank"
+              class="social-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" /></svg
+            ></a>
+          </div>
+          <p>
+            &copy; <span id="year"></span> Enmanuel Leon.
+            <span data-i18n="footer-made">Made with</span>
+            <span style="color: var(--accent)">❤</span>
+            <span data-i18n="footer-at">in Madrid.</span>
+          </p>
+        </footer>
+      </main>
+    </div>
 
+    <script>
+      const i18n = {
+        en: {
+          location: "Madrid, Spain",
+          "skills-title": "Technical Stack",
+          "exp-title": "Professional Journey",
+          "edu-title": "Education",
+          "edu-degree": "Computer Engineering",
+          "edu-desc":
+            "Comprehensive training in software engineering fundamentals, advanced data structures, algorithms, and technology project management.",
+          "profile-title": "Professional Profile",
+          "profile-desc":
+            "Computer Engineer with a strategic focus on high-impact software. Specialized in scalable ecosystems using JS/TS, Python and microservices. Currently focused on AI-driven solutions at Entropy.",
+          "footer-made": "Made with",
+          "footer-at": "in Madrid.",
+          years: "Years",
+          months: "Months",
+          jobs: [
+            {
+              title: "Fullstack Developer (AI & Core Systems)",
+              company: "Entropy",
+              date: "Apr. 2024 — Present",
+              bullets: [
+                "Architecture and implementation of AI-powered workflows (LLMs).",
+                "Development of proprietary tools for internal process optimization.",
+                "Integration of intelligent interfaces with low-latency backend systems.",
+                "Strategic collaboration in resolving technical challenges and stack evolution.",
+              ],
+            },
+            {
+              title: "Senior Fullstack Developer",
+              company: "Interfell - ePayco",
+              date: "Jun. 2021 — Apr. 2024",
+              bullets: [
+                "Design and maintenance of critical financial microservices (REST/SOAP).",
+                "Optimization of payment engines and large-scale transaction orchestration.",
+                "Software quality pipelines integration (SonarQube).",
+                "Containerized infrastructure management (Docker).",
+              ],
+            },
+            {
+              title: "Systems Analyst",
+              company: "Intelix Synergy, C.A.",
+              date: "Mar. 2020 — Jun. 2021",
+              bullets: [
+                "Integral development of enterprise solutions for digital transformation.",
+                "Modular software architecture implementation.",
+                "Strategic management of technical projects.",
+                "Advanced technical documentation for ecosystem sustainability.",
+              ],
+            },
+          ],
+        },
+        es: {
+          location: "Madrid, España",
+          "skills-title": "Stack Tecnológico",
+          "exp-title": "Trayectoria Profesional",
+          "edu-title": "Formación Académica",
+          "edu-degree": "Ingeniería de Computación",
+          "edu-desc":
+            "Formación integral en fundamentos de ingeniería de software, estructuras de datos avanzadas, algoritmia y gestión de proyectos tecnológicos.",
+          "profile-title": "Perfil Profesional",
+          "profile-desc":
+            "Ingeniero de Computación con un enfoque estratégico en desarrollo de software de alto impacto. Especializado en ecosistemas escalables con JS/TS, Python y microservicios. Actualmente centrado en soluciones de IA en Entropy.",
+          "footer-made": "Hecho con",
+          "footer-at": "en Madrid.",
+          years: "Años",
+          months: "Meses",
+          jobs: [
+            {
+              title: "Fullstack Developer (AI & Core Systems)",
+              company: "Entropy",
+              date: "Abr. 2024 — Presente",
+              bullets: [
+                "Arquitectura e implementación de flujos potenciados por IA (LLMs).",
+                "Desarrollo de herramientas propietarias para optimización de procesos.",
+                "Integración de interfaces inteligentes con backends de baja latencia.",
+                "Colaboración estratégica en la resolución de desafíos técnicos.",
+              ],
+            },
+            {
+              title: "Senior Fullstack Developer",
+              company: "Interfell - ePayco",
+              date: "Jun. 2021 — Abr. 2024",
+              bullets: [
+                "Diseño y mantenimiento de microservicios financieros críticos (REST/SOAP).",
+                "Optimización de motores de pago y orquestación de transacciones.",
+                "Integración de pipelines de calidad (SonarQube).",
+                "Gestión de infraestructura contenerizada (Docker).",
+              ],
+            },
+            {
+              title: "Analista de Sistemas",
+              company: "Intelix Synergy, C.A.",
+              date: "Mar. 2020 — Jun. 2021",
+              bullets: [
+                "Desarrollo integral de soluciones para transformación digital.",
+                "Implementación de arquitecturas de software modulares.",
+                "Gestión estratégica de proyectos técnicos.",
+                "Documentación técnica avanzada para sostenibilidad del ecosistema.",
+              ],
+            },
+          ],
+        },
+      };
+
+      let currentLang = navigator.language.startsWith("es") ? "es" : "en";
+      let animId = 0;
+
+      async function typeWriter(el, text, speed = 20, myId) {
+        if (!el) return;
+        el.innerHTML = "";
+        el.classList.add("cursor");
+        for (let char of text) {
+          if (myId !== animId) return;
+          el.innerHTML += char;
+          await new Promise((r) => setTimeout(r, speed));
+        }
+        el.classList.remove("cursor");
+      }
+
+      function applyTranslations() {
+        animId++;
+        const currentAnimId = animId;
+        const t = i18n[currentLang];
+
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (t[key] && !["profile-desc", "edu-desc"].includes(key)) {
+            el.textContent = t[key];
+          }
+        });
+
+        const list = document.getElementById("experience-list");
+        list.innerHTML = t.jobs
+          .map(
+            (j, i) => `
+          <div class="timeline-item">
+            <h3 class="job-title">${j.title}</h3>
+            <div class="company"><span>${j.company}</span><span class="date-tag">${j.date}</span></div>
+            <div class="job-desc"><ul id="job-bullets-${i}"></ul></div>
+          </div>
+        `,
+          )
+          .join("");
+
+        document.getElementById("btn-en").className =
+          `lang-btn ${currentLang === "en" ? "active" : ""}`;
+        document.getElementById("btn-es").className =
+          `lang-btn ${currentLang === "es" ? "active" : ""}`;
+
+        updateExperience();
+
+        (async () => {
+          await typeWriter(
+            document.getElementById("typewriter-profile"),
+            t["profile-desc"],
+            15,
+            currentAnimId,
+          );
+          if (currentAnimId !== animId) return;
+
+          for (let i = 0; i < t.jobs.length; i++) {
+            if (currentAnimId !== animId) return;
+            const bulletList = document.getElementById(`job-bullets-${i}`);
+            for (let bText of t.jobs[i].bullets) {
+              if (currentAnimId !== animId) return;
+              const li = document.createElement("li");
+              bulletList.appendChild(li);
+              await typeWriter(li, bText, 10, currentAnimId);
+            }
+          }
+
+          if (currentAnimId !== animId) return;
+          await typeWriter(
+            document.getElementById("typewriter-edu"),
+            t["edu-desc"],
+            15,
+            currentAnimId,
+          );
+        })();
+      }
+
+      function setLanguage(lang) {
+        if (currentLang === lang) return;
+        currentLang = lang;
+        applyTranslations();
+      }
+
+      function updateExperience() {
+        const startDate = new Date("2020-03-01");
+        const diff =
+          Math.abs(new Date() - startDate) / (1000 * 60 * 60 * 24 * 365.25);
+        const years = Math.floor(diff);
+        const months = Math.floor((diff % 1) * 12);
+        const t = i18n[currentLang];
+        document.getElementById("exp-counter").textContent =
+          `${years} ${t.years}, ${months} ${t.months}`;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(
+            (e) => e.isIntersecting && e.target.classList.add("active"),
+          );
+        },
+        { threshold: 0.1 },
+      );
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      applyTranslations();
+
+      document.addEventListener("mousemove", (e) => {
+        const x = (e.clientX / window.innerWidth) * 100;
+        const y = (e.clientY / window.innerHeight) * 100;
+        document.body.style.backgroundImage = `
+          radial-gradient(circle at ${x}% ${y}%, rgba(20, 255, 236, 0.08) 0%, transparent 40%),
+          radial-gradient(circle at 20% 20%, rgba(20, 255, 236, 0.05) 0%, transparent 40%),
+          radial-gradient(circle at 80% 80%, rgba(20, 255, 236, 0.05) 0%, transparent 40%)
+        `;
+      });
+    </script>
+  </body>
 </html>
