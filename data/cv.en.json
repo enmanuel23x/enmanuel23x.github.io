@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "brand": "EL",
+    "items": [
+      { "id": "hero", "label": "Home" },
+      { "id": "about", "label": "Profile" },
+      { "id": "experience", "label": "Experience" },
+      { "id": "skills", "label": "Skills" },
+      { "id": "education", "label": "Education" },
+      { "id": "contact", "label": "Contact" }
+    ]
+  },
+  "profile": {
+    "name": "Enmanuel Leon",
+    "role": "Senior Fullstack Developer",
+    "photo": "img/Profile-pic.jpeg"
+  },
+  "hero": {
+    "badge": "Open to high-impact projects",
+    "summary": "Computer Engineer specialized in building reliable, scalable and business-oriented digital products with JavaScript/TypeScript, Python and modern architectures.",
+    "typingLine": "i build dependable software systems designed to scale;",
+    "actions": [
+      { "label": "Contact", "href": "#contact" },
+      { "label": "View experience", "href": "#experience" }
+    ]
+  },
+  "about": {
+    "label": "// About",
+    "title": "I build software with quality, impact and long-term sustainability in mind",
+    "paragraphs": [
+      "I have more than six years of experience building digital products for fintech, enterprise services and AI-driven initiatives.",
+      "My approach combines technical vision and product thinking: I prioritize scalability, code maintainability and a clear user experience.",
+      "I have worked with multicultural remote teams, leading technical decisions and supporting continuous improvement processes."
+    ],
+    "stats": [
+      { "value": 6, "label": "Years of experience" },
+      { "value": 25, "label": "Relevant projects" },
+      { "value": 3, "label": "Industry domains" },
+      { "value": 2, "label": "Professional languages" }
+    ]
+  },
+  "experience": {
+    "label": "// Experience",
+    "title": "Professional journey",
+    "subtitle": "Roles across fullstack development, architecture and AI-enabled solutions.",
+    "items": [
+      {
+        "id": "entropy",
+        "period": "Apr 2024 - Present",
+        "location": "Madrid, Spain · Remote",
+        "role": "Fullstack Developer (AI & Core Systems)",
+        "company": "Entropy",
+        "bullets": [
+          "Designed and implemented AI-assisted workflows with a focus on reliability and traceability.",
+          "Built internal tools to improve operational efficiency and reduce repetitive manual work.",
+          "Integrated intelligent interfaces with low-latency backend services for critical use cases.",
+          "Contributed to architecture decisions to evolve the stack without sacrificing stability."
+        ],
+        "tags": ["JavaScript", "TypeScript", "Python", "LLMs", "APIs"]
+      },
+      {
+        "id": "epayco",
+        "period": "Jun 2021 - Apr 2024",
+        "location": "Remote",
+        "role": "Senior Fullstack Developer",
+        "company": "Interfell - ePayco",
+        "bullets": [
+          "Built and maintained financial microservices supporting high-demand transactional flows.",
+          "Optimized payment engines and integration orchestration across REST and SOAP ecosystems.",
+          "Introduced code quality controls and sound technical review practices.",
+          "Worked with containerized and reproducible environments to speed up deployments and reduce incidents."
+        ],
+        "tags": ["Node.js", "Microservices", "Docker", "REST", "SOAP"]
+      },
+      {
+        "id": "intelix",
+        "period": "Mar 2020 - Jun 2021",
+        "location": "Valencia, Venezuela",
+        "role": "Systems Analyst",
+        "company": "Intelix Synergy, C.A.",
+        "bullets": [
+          "Developed enterprise software solutions for digital transformation initiatives.",
+          "Implemented modular software architectures to improve maintainability and scalability.",
+          "Supported technical planning and delivery tracking for key milestones.",
+          "Produced structured technical documentation for project continuity and support readiness."
+        ],
+        "tags": ["Analysis", "Architecture", "Documentation", "Technical management"]
+      }
+    ]
+  },
+  "skills": {
+    "label": "// Skills",
+    "title": "Stack and capabilities",
+    "categories": [
+      {
+        "title": "Backend & APIs",
+        "items": [
+          { "name": "Node.js", "level": 92 },
+          { "name": "Express / Fastify", "level": 88 },
+          { "name": "Python", "level": 82 },
+          { "name": "REST / SOAP", "level": 90 }
+        ]
+      },
+      {
+        "title": "Frontend",
+        "items": [
+          { "name": "React / Next.js", "level": 85 },
+          { "name": "JavaScript / TypeScript", "level": 90 },
+          { "name": "HTML / CSS", "level": 88 },
+          { "name": "Product-oriented UX", "level": 80 }
+        ]
+      },
+      {
+        "title": "Data & Infrastructure",
+        "items": [
+          { "name": "PostgreSQL", "level": 84 },
+          { "name": "MongoDB", "level": 82 },
+          { "name": "Docker", "level": 79 },
+          { "name": "CI/CD", "level": 75 }
+        ]
+      },
+      {
+        "title": "Applied AI",
+        "items": [
+          { "name": "LLM integrations", "level": 84 },
+          { "name": "Prompt design", "level": 80 },
+          { "name": "Workflow automation", "level": 83 },
+          { "name": "Internal tooling", "level": 86 }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "label": "// Education",
+    "title": "Academic background",
+    "items": [
+      {
+        "period": "2017 - 2020",
+        "degree": "Computer Engineering",
+        "school": "Universidad Jose Antonio Paez",
+        "description": "Training in software engineering fundamentals, algorithms, data structures and technology project management."
+      }
+    ]
+  },
+  "projects": {
+    "label": "// Featured projects",
+    "title": "Selected work",
+    "subtitle": "Projects and products where I contributed with a strong focus on performance and business outcomes.",
+    "items": []
+  },
+  "contact": {
+    "label": "// Contact",
+    "title": "Let us connect",
+    "subtitle": "Open to opportunities where technology and business outcomes move forward together.",
+    "items": [
+      {
+        "label": "Email",
+        "value": "enma2310@outlook.com",
+        "href": "mailto:enma2310@outlook.com",
+        "external": false
+      },
+      {
+        "label": "Phone",
+        "value": "+34 630 418 644",
+        "href": "tel:+34630418644",
+        "external": false
+      },
+      {
+        "label": "LinkedIn",
+        "value": "/in/enmanuel-leon-48b11714b/",
+        "href": "https://www.linkedin.com/in/enmanuel-leon-48b11714b/",
+        "external": true
+      },
+      {
+        "label": "GitHub",
+        "value": "@enmanuel23x",
+        "href": "https://github.com/enmanuel23x",
+        "external": true
+      },
+      {
+        "label": "Location",
+        "value": "Madrid, Spain"
+      }
+    ]
+  },
+  "footer": "Designed and developed with <span class='heart'>❤️</span> by Enmanuel Leon — © {year}"
+}

@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "brand": "EL",
+    "items": [
+      { "id": "hero", "label": "Inicio" },
+      { "id": "about", "label": "Sobre mi" },
+      { "id": "experience", "label": "Experiencia" },
+      { "id": "skills", "label": "Skills" },
+      { "id": "education", "label": "Estudios" },
+      { "id": "contact", "label": "Contacto" }
+    ]
+  },
+  "profile": {
+    "name": "Enmanuel Leon",
+    "role": "Senior Fullstack Developer",
+    "photo": "img/Profile-pic.jpeg"
+  },
+  "hero": {
+    "badge": "Disponible para proyectos de alto impacto",
+    "summary": "Ingeniero de Computacion especializado en construir productos robustos, escalables y orientados a negocio con JavaScript/TypeScript, Python y arquitecturas modernas.",
+    "typingLine": "diseno sistemas de software confiables y listos para crecer;",
+    "actions": [
+      { "label": "Contactar", "href": "#contact" },
+      { "label": "Ver experiencia", "href": "#experience" }
+    ]
+  },
+  "about": {
+    "label": "// Sobre mi",
+    "title": "Construyo software con foco en calidad, impacto y sostenibilidad",
+    "paragraphs": [
+      "Cuento con mas de 6 anos de experiencia desarrollando productos digitales para sectores como fintech, servicios empresariales y soluciones impulsadas por IA.",
+      "Mi enfoque combina vision tecnica y criterio de producto: priorizo la escalabilidad, la mantenibilidad del codigo y una experiencia de usuario clara.",
+      "He colaborado con equipos multiculturales en entornos remotos, liderando decisiones tecnicas y acompanando procesos de mejora continua."
+    ],
+    "stats": [
+      { "value": 6, "label": "Anos de experiencia" },
+      { "value": 25, "label": "Proyectos relevantes" },
+      { "value": 3, "label": "Sectores de impacto" },
+      { "value": 2, "label": "Idiomas profesionales" }
+    ]
+  },
+  "experience": {
+    "label": "// Experiencia",
+    "title": "Trayectoria profesional",
+    "subtitle": "Roles en desarrollo fullstack, arquitectura y soluciones basadas en IA.",
+    "items": [
+      {
+        "id": "entropy",
+        "period": "Abr. 2024 - Presente",
+        "location": "Madrid, Espana · Remoto",
+        "role": "Fullstack Developer (AI & Core Systems)",
+        "company": "Entropy",
+        "bullets": [
+          "Disene e implemente flujos de trabajo asistidos por IA con enfoque en confiabilidad y trazabilidad.",
+          "Desarrolle herramientas internas para mejorar la eficiencia operativa y reducir tareas manuales.",
+          "Integre interfaces inteligentes con servicios backend de baja latencia para casos criticos.",
+          "Participe en decisiones de arquitectura para evolucionar el stack tecnico sin comprometer estabilidad."
+        ],
+        "tags": ["JavaScript", "TypeScript", "Python", "LLMs", "APIs"]
+      },
+      {
+        "id": "epayco",
+        "period": "Jun. 2021 - Abr. 2024",
+        "location": "Remoto",
+        "role": "Senior Fullstack Developer",
+        "company": "Interfell - ePayco",
+        "bullets": [
+          "Construccion y mantenimiento de microservicios financieros para procesos transaccionales de alta demanda.",
+          "Optimizacion de motores de pago y orquestacion de integraciones en ecosistemas REST y SOAP.",
+          "Implementacion de controles de calidad de codigo y buenas practicas de revision tecnica.",
+          "Trabajo con contenedores y entornos reproducibles para acelerar despliegues y minimizar incidencias."
+        ],
+        "tags": ["Node.js", "Microservicios", "Docker", "REST", "SOAP"]
+      },
+      {
+        "id": "intelix",
+        "period": "Mar. 2020 - Jun. 2021",
+        "location": "Valencia, Venezuela",
+        "role": "Analista de Sistemas",
+        "company": "Intelix Synergy, C.A.",
+        "bullets": [
+          "Desarrolle soluciones empresariales para procesos de transformacion digital.",
+          "Implemente arquitecturas modulares para facilitar mantenimiento y escalabilidad.",
+          "Acompane la planificacion tecnica y el seguimiento de entregables clave.",
+          "Genere documentacion tecnica estructurada para soporte y continuidad de proyectos."
+        ],
+        "tags": ["Analisis", "Arquitectura", "Documentacion", "Gestion tecnica"]
+      }
+    ]
+  },
+  "skills": {
+    "label": "// Skills",
+    "title": "Stack y capacidades",
+    "categories": [
+      {
+        "title": "Backend & APIs",
+        "items": [
+          { "name": "Node.js", "level": 92 },
+          { "name": "Express / Fastify", "level": 88 },
+          { "name": "Python", "level": 82 },
+          { "name": "REST / SOAP", "level": 90 }
+        ]
+      },
+      {
+        "title": "Frontend",
+        "items": [
+          { "name": "React / Next.js", "level": 85 },
+          { "name": "JavaScript / TypeScript", "level": 90 },
+          { "name": "HTML / CSS", "level": 88 },
+          { "name": "UX orientada a producto", "level": 80 }
+        ]
+      },
+      {
+        "title": "Data & Infraestructura",
+        "items": [
+          { "name": "PostgreSQL", "level": 84 },
+          { "name": "MongoDB", "level": 82 },
+          { "name": "Docker", "level": 79 },
+          { "name": "CI/CD", "level": 75 }
+        ]
+      },
+      {
+        "title": "IA Aplicada",
+        "items": [
+          { "name": "Integracion de LLMs", "level": 84 },
+          { "name": "Diseno de prompts", "level": 80 },
+          { "name": "Automatizacion de flujos", "level": 83 },
+          { "name": "Herramientas internas", "level": 86 }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "label": "// Formacion",
+    "title": "Educacion",
+    "items": [
+      {
+        "period": "2017 - 2020",
+        "degree": "Ingenieria de Computacion",
+        "school": "Universidad Jose Antonio Paez",
+        "description": "Formacion en fundamentos de ingenieria de software, algoritmos, estructuras de datos y gestion de proyectos tecnologicos."
+      }
+    ]
+  },
+  "projects": {
+    "label": "// Proyectos destacados",
+    "title": "Trabajo seleccionado",
+    "subtitle": "Proyectos y productos en los que he participado con foco en rendimiento y negocio.",
+    "items": []
+  },
+  "contact": {
+    "label": "// Contacto",
+    "title": "Hablemos",
+    "subtitle": "Abierto a oportunidades donde la tecnologia y el negocio avancen juntos.",
+    "items": [
+      {
+        "label": "Email",
+        "value": "enma2310@outlook.com",
+        "href": "mailto:enma2310@outlook.com",
+        "external": false
+      },
+      {
+        "label": "Telefono",
+        "value": "+34 630 418 644",
+        "href": "tel:+34630418644",
+        "external": false
+      },
+      {
+        "label": "LinkedIn",
+        "value": "/in/enmanuel-leon-48b11714b/",
+        "href": "https://www.linkedin.com/in/enmanuel-leon-48b11714b/",
+        "external": true
+      },
+      {
+        "label": "GitHub",
+        "value": "@enmanuel23x",
+        "href": "https://github.com/enmanuel23x",
+        "external": true
+      },
+      {
+        "label": "Ubicacion",
+        "value": "Madrid, Espana"
+      }
+    ]
+  },
+  "footer": "Disenado y desarrollado con <span class='heart'>❤️</span> por Enmanuel Leon — © {year}"
+}
