@@ -1621,16 +1621,20 @@
         const contactIcons = {
           Email: "📧",
           Telefono: "📱",
+          "Teléfono": "📱",
           Phone: "📱",
           LinkedIn: "💼",
           GitHub: "🐙",
           "Twitter / X": "🐦",
           Ubicacion: "📍",
+          "Ubicación": "📍",
           Location: "📍",
         };
 
         document.getElementById("contactLinks").innerHTML = data.contact.items
-          .filter((item) => !["Ubicacion", "Location"].includes(item.label))
+          .filter(
+            (item) => !["Ubicacion", "Ubicación", "Location"].includes(item.label),
+          )
           .map((item) => {
             const icon = contactIcons[item.label] || "🔗";
             const href = item.href || "#";

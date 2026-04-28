@@ -17,8 +17,8 @@
   },
   "hero": {
     "badge": "Open to high-impact projects",
-    "summary": "Computer Engineer specialized in building reliable, scalable and business-oriented digital products with JavaScript/TypeScript, Python and modern architectures.",
-    "typingLine": "i build dependable software systems designed to scale;",
+    "summary": "Computer Engineer specialized in building reliable, scalable, and business-oriented digital products with JavaScript/TypeScript, Python, and modern architectures.",
+    "typingLine": "I build dependable software systems designed to scale;",
     "actions": [
       { "label": "Contact", "href": "#contact" },
       { "label": "View experience", "href": "#experience" }
@@ -26,10 +26,10 @@
   },
   "about": {
     "label": "// About",
-    "title": "I build software with quality, impact and long-term sustainability in mind",
+    "title": "I build software with quality, impact, and long-term sustainability in mind",
     "paragraphs": [
-      "I have more than six years of experience building digital products for fintech, enterprise services and AI-driven initiatives.",
-      "My approach combines technical vision and product thinking: I prioritize scalability, code maintainability and a clear user experience.",
+      "I have more than six years of experience building digital products for fintech, enterprise services, and AI-driven initiatives.",
+      "My approach combines technical vision and product thinking: I prioritize scalability, code maintainability, and a clear user experience.",
       "I have worked with multicultural remote teams, leading technical decisions and supporting continuous improvement processes."
     ],
     "stats": [
@@ -42,7 +42,7 @@
   "experience": {
     "label": "// Experience",
     "title": "Professional journey",
-    "subtitle": "Roles across fullstack development, architecture and AI-enabled solutions.",
+    "subtitle": "Roles across fullstack development, architecture, and AI-enabled solutions.",
     "items": [
       {
         "id": "entropy",
@@ -54,7 +54,7 @@
           "Designed and implemented AI-assisted workflows with a focus on reliability and traceability.",
           "Built internal tools to improve operational efficiency and reduce repetitive manual work.",
           "Integrated intelligent interfaces with low-latency backend services for critical use cases.",
-          "Contributed to architecture decisions to evolve the stack without sacrificing stability."
+          "Contributed to architecture decisions to evolve the tech stack without sacrificing stability."
         ],
         "tags": ["JavaScript", "TypeScript", "Python", "LLMs", "APIs"]
       },
@@ -67,8 +67,8 @@
         "bullets": [
           "Built and maintained financial microservices supporting high-demand transactional flows.",
           "Optimized payment engines and integration orchestration across REST and SOAP ecosystems.",
-          "Introduced code quality controls and sound technical review practices.",
-          "Worked with containerized and reproducible environments to speed up deployments and reduce incidents."
+          "Introduced code-quality controls and sound technical review practices.",
+          "Worked with containerized, reproducible environments to speed up deployments and reduce incidents."
         ],
         "tags": ["Node.js", "Microservices", "Docker", "REST", "SOAP"]
       },
@@ -138,7 +138,7 @@
         "period": "2017 - 2020",
         "degree": "Computer Engineering",
         "school": "Universidad Jose Antonio Paez",
-        "description": "Training in software engineering fundamentals, algorithms, data structures and technology project management."
+        "description": "Training in software engineering fundamentals, algorithms, data structures, and technology project management."
       }
     ]
   },
@@ -183,5 +183,5 @@
       }
     ]
   },
-  "footer": "Designed and developed with <span class='heart'>❤️</span> by Enmanuel Leon — © {year}"
+  "footer": "Designed and developed with <span class='heart'></span> by Enmanuel Leon — © {year}"
 }
