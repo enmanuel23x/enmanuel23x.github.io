@@ -47,7 +47,7 @@
       {
         "id": "entropy",
         "period": "Abr. 2024 - Presente",
-        "location": "Madrid, España · Remoto",
+        "location": "Barcelona, España · Remoto",
         "role": "Fullstack Developer (AI & Core Systems)",
         "company": "Entropy",
         "bullets": [
@@ -62,15 +62,16 @@
         "id": "epayco",
         "period": "Jun. 2021 - Abr. 2024",
         "location": "Remoto",
-        "role": "Senior Fullstack Developer",
+        "role": "Fullstack Developer (Semi Senior)",
         "company": "Interfell - ePayco",
         "bullets": [
           "Construcción y mantenimiento de microservicios financieros para procesos transaccionales de alta demanda.",
+          "Desarrollé módulos e integraciones en React Native para SDKs de pagos móviles, asegurando compatibilidad multiplataforma.",
           "Optimización de motores de pago y orquestación de integraciones en ecosistemas REST y SOAP.",
           "Implementación de controles de calidad de código y buenas prácticas de revisión técnica.",
           "Trabajo con contenedores y entornos reproducibles para acelerar despliegues y minimizar incidencias."
         ],
-        "tags": ["Node.js", "Microservicios", "Docker", "REST", "SOAP"]
+        "tags": ["Node.js", "React Native", "Microservicios", "Docker", "REST"]
       },
       {
         "id": "intelix",
@@ -104,7 +105,7 @@
       {
         "title": "Frontend",
         "items": [
-          { "name": "React / Next.js", "level": 85 },
+          { "name": "React / Next.js / React Native", "level": 85 },
           { "name": "JavaScript / TypeScript", "level": 90 },
           { "name": "HTML / CSS", "level": 88 },
           { "name": "UX orientada a producto", "level": 80 }
@@ -160,12 +161,6 @@
         "external": false
       },
       {
-        "label": "Teléfono",
-        "value": "+34 630 418 644",
-        "href": "tel:+34630418644",
-        "external": false
-      },
-      {
         "label": "LinkedIn",
         "value": "/in/enmanuel-leon-48b11714b/",
         "href": "https://www.linkedin.com/in/enmanuel-leon-48b11714b/",
@@ -176,10 +171,6 @@
         "value": "@enmanuel23x",
         "href": "https://github.com/enmanuel23x",
         "external": true
-      },
-      {
-        "label": "Ubicación",
-        "value": "Madrid, España"
       }
     ]
   },

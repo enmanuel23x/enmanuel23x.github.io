@@ -396,14 +396,43 @@
         box-shadow: 0 8px 30px var(--accent-glow);
       }
 
-      .btn-secondary {
-        background: var(--bg-card);
-        color: var(--text-primary);
-        border: 1px solid var(--border);
-      }
-
       .btn-secondary:hover {
         border-color: var(--accent);
+        transform: translateY(-2px);
+      }
+
+      .download-links {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        animation: fadeInUp 0.8s ease 0.9s both;
+        position: relative;
+        z-index: 10;
+      }
+
+      .download-link {
+        color: var(--text-muted);
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-family: var(--font-mono);
+        transition: all var(--transition);
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid transparent;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .download-link:hover {
+        color: var(--accent-light);
+        background: rgba(108, 99, 255, 0.1);
+        border-color: rgba(108, 99, 255, 0.2);
         transform: translateY(-2px);
       }
 
@@ -1296,6 +1325,14 @@
             🚀 Ver skills
           </a>
         </div>
+        <div class="download-links">
+          <button id="downloadMD" class="download-link" type="button">
+            <span>📄</span> <span id="mdText">Descargar .MD</span>
+          </button>
+          <button id="downloadPDF" class="download-link" type="button">
+            <span>📑</span> <span id="pdfText">Descargar .PDF</span>
+          </button>
+        </div>
       </div>
       <div class="hero-scroll">
         <svg
@@ -1621,19 +1658,20 @@
         const contactIcons = {
           Email: "📧",
           Telefono: "📱",
-          "Teléfono": "📱",
+          Teléfono: "📱",
           Phone: "📱",
           LinkedIn: "💼",
           GitHub: "🐙",
           "Twitter / X": "🐦",
           Ubicacion: "📍",
-          "Ubicación": "📍",
+          Ubicación: "📍",
           Location: "📍",
         };
 
         document.getElementById("contactLinks").innerHTML = data.contact.items
           .filter(
-            (item) => !["Ubicacion", "Ubicación", "Location"].includes(item.label),
+            (item) =>
+              !["Ubicacion", "Ubicación", "Location"].includes(item.label),
           )
           .map((item) => {
             const icon = contactIcons[item.label] || "🔗";
@@ -1668,6 +1706,58 @@
           year,
         );
         document.getElementById("langSelect").value = state.lang;
+
+        // ── CV Download Logic ──
+        const mdBtn = document.getElementById("downloadMD");
+        const pdfBtn = document.getElementById("downloadPDF");
+        const mdText = document.getElementById("mdText");
+        const pdfText = document.getElementById("pdfText");
+
+        // Set URLs per language
+        const isES = state.lang === "es";
+        const files = {
+          md:  { url: `./export/cv.${state.lang}.md`,  name: isES ? "Enmanuel_Leon_CV_ES.md"  : "Enmanuel_Leon_CV_EN.md" },
+          pdf: { url: `./export/Enmanuel_Leon_CV_${isES ? "ES" : "EN"}.pdf`, name: isES ? "Enmanuel_Leon_CV_ES.pdf" : "Enmanuel_Leon_CV_EN.pdf" },
+        };
+        mdText.textContent  = isES ? "Descargar .MD"  : "Download .MD";
+        pdfText.textContent = isES ? "Descargar .PDF" : "Download .PDF";
+
+        async function downloadFile(fileUrl, fileName) {
+          const res = await fetch(fileUrl);
+          if (!res.ok) { alert("File not found: " + res.status); return; }
+          const buf = await res.arrayBuffer();
+
+          if (window.showSaveFilePicker) {
+            try {
+              const ext = fileName.split(".").pop();
+              const mimeMap = { pdf: "application/pdf", md: "text/markdown" };
+              const handle = await window.showSaveFilePicker({
+                suggestedName: fileName,
+                types: [{
+                  description: ext.toUpperCase() + " file",
+                  accept: { [mimeMap[ext] || "application/octet-stream"]: ["." + ext] },
+                }],
+              });
+              const writable = await handle.createWritable();
+              await writable.write(buf);
+              await writable.close();
+              return;
+            } catch (err) {
+              if (err.name === "AbortError") return;
+            }
+          }
+
+          const file = new File([buf], fileName, { type: "application/octet-stream" });
+          const link = document.createElement("a");
+          link.href = URL.createObjectURL(file);
+          link.download = fileName;
+          document.body.appendChild(link);
+          link.click();
+          setTimeout(() => { link.remove(); URL.revokeObjectURL(link.href); }, 5000);
+        }
+
+        mdBtn.onclick  = () => downloadFile(files.md.url,  files.md.name);
+        pdfBtn.onclick = () => downloadFile(files.pdf.url, files.pdf.name);
       }
 
       function startTyping(data) {

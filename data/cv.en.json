@@ -47,7 +47,7 @@
       {
         "id": "entropy",
         "period": "Apr 2024 - Present",
-        "location": "Madrid, Spain · Remote",
+        "location": "Barcelona, Spain · Remote",
         "role": "Fullstack Developer (AI & Core Systems)",
         "company": "Entropy",
         "bullets": [
@@ -62,15 +62,16 @@
         "id": "epayco",
         "period": "Jun 2021 - Apr 2024",
         "location": "Remote",
-        "role": "Senior Fullstack Developer",
+        "role": "Fullstack Developer (Semi Senior)",
         "company": "Interfell - ePayco",
         "bullets": [
           "Built and maintained financial microservices supporting high-demand transactional flows.",
+          "Developed React Native modules and integrations for mobile payment SDKs, ensuring cross-platform compatibility.",
           "Optimized payment engines and integration orchestration across REST and SOAP ecosystems.",
           "Introduced code-quality controls and sound technical review practices.",
           "Worked with containerized, reproducible environments to speed up deployments and reduce incidents."
         ],
-        "tags": ["Node.js", "Microservices", "Docker", "REST", "SOAP"]
+        "tags": ["Node.js", "React Native", "Microservicios", "Docker", "REST"]
       },
       {
         "id": "intelix",
@@ -104,7 +105,7 @@
       {
         "title": "Frontend",
         "items": [
-          { "name": "React / Next.js", "level": 85 },
+          { "name": "React / Next.js / React Native", "level": 85 },
           { "name": "JavaScript / TypeScript", "level": 90 },
           { "name": "HTML / CSS", "level": 88 },
           { "name": "Product-oriented UX", "level": 80 }
@@ -160,12 +161,6 @@
         "external": false
       },
       {
-        "label": "Phone",
-        "value": "+34 630 418 644",
-        "href": "tel:+34630418644",
-        "external": false
-      },
-      {
         "label": "LinkedIn",
         "value": "/in/enmanuel-leon-48b11714b/",
         "href": "https://www.linkedin.com/in/enmanuel-leon-48b11714b/",
@@ -176,10 +171,6 @@
         "value": "@enmanuel23x",
         "href": "https://github.com/enmanuel23x",
         "external": true
-      },
-      {
-        "label": "Location",
-        "value": "Madrid, Spain"
       }
     ]
   },
