@@ -75,5 +75,5 @@ _2017 - 2020_
 ## Additional Information
 
 **Languages:** Spanish (Native), English (Professional)  
-**Interests:** AI Ethics, System Design, Web Performance, Developer Experience  
+**Interests:** System Design, Web Performance, Developer Experience  
 **Portfolio:** [enmanuel23x.github.io](https://enmanuel23x.github.io)

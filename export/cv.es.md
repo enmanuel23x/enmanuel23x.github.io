@@ -75,5 +75,5 @@ _2017 - 2020_
 ## Información Adicional
 
 **Idiomas:** Español (Nativo), Inglés (Profesional)  
-**Intereses:** Ética en IA, Diseño de Sistemas, Rendimiento Web, Experiencia del Desarrollador  
+**Intereses:** Diseño de Sistemas, Rendimiento Web, Experiencia del Desarrollador  
 **Portfolio:** [enmanuel23x.github.io](https://enmanuel23x.github.io)
