@@ -10,6 +10,21 @@
       { "id": "contact", "label": "Contacto" }
     ]
   },
+  "ui": {
+    "themeToggle": "Cambiar tema",
+    "langSelect": "Cambiar idioma",
+    "hamburger": "Menú",
+    "backToTop": "Volver arriba",
+    "terminalTrigger": "Abrir terminal de desarrollo",
+    "terminalInput": "Línea de comandos",
+    "downloadCv": "Descargar CV",
+    "modalTitle": "Descargar Currículum",
+    "modalClose": "Cerrar modal",
+    "modalLightweight": "Formato de texto ligero",
+    "modalPrintReady": "Formato listo para impresión",
+    "contactMe": "Contáctame",
+    "viewSkills": "Ver skills"
+  },
   "profile": {
     "name": "Enmanuel Leon",
     "role": "Senior Fullstack Developer",
@@ -18,7 +33,7 @@
   "hero": {
     "badge": "Disponible para proyectos de alto impacto",
     "summary": "Ingeniero de Computación especializado en construir productos robustos, escalables y orientados al negocio con JavaScript/TypeScript, Python y arquitecturas modernas.",
-    "typingLine": "diseño sistemas de software confiables y listos para crecer;",
+    "typingLine": "Diseño sistemas de software confiables, de alto impacto y listos para crecer;",
     "actions": [
       { "label": "Contactar", "href": "#contact" },
       { "label": "Ver experiencia", "href": "#experience" }
@@ -51,12 +66,12 @@
         "role": "Fullstack Developer (AI & Core Systems)",
         "company": "Entropy",
         "bullets": [
-          "Diseñé e implementé flujos de trabajo asistidos por IA con enfoque en confiabilidad y trazabilidad.",
-          "Desarrollé herramientas internas para mejorar la eficiencia operativa y reducir tareas manuales.",
-          "Integré interfaces inteligentes con servicios backend de baja latencia para casos críticos.",
-          "Participé en decisiones de arquitectura para evolucionar el stack técnico sin comprometer la estabilidad."
+          "Diseñé e implementé flujos de trabajo inteligentes con agentes de IA, garantizando alta confiabilidad y trazabilidad.",
+          "Construí herramientas y paneles internos automatizados que optimizaron la eficiencia operativa del equipo en tareas diarias críticas.",
+          "Integré interfaces interactivas de alta velocidad con servicios y microservicios backend de baja latencia.",
+          "Lideré y aporté en decisiones de diseño y arquitectura para evolucionar y escalar el stack técnico de forma segura."
         ],
-        "tags": ["JavaScript", "TypeScript", "Python", "LLMs", "APIs"]
+        "tags": ["TypeScript", "Node.js", "React", "React Native", "Python", "LLMs"]
       },
       {
         "id": "epayco",
@@ -65,13 +80,13 @@
         "role": "Fullstack Developer (Semi Senior)",
         "company": "Interfell - ePayco",
         "bullets": [
-          "Construcción y mantenimiento de microservicios financieros para procesos transaccionales de alta demanda.",
-          "Desarrollé módulos e integraciones en React Native para SDKs de pagos móviles, asegurando compatibilidad multiplataforma.",
-          "Optimización de motores de pago y orquestación de integraciones en ecosistemas REST y SOAP.",
-          "Implementación de controles de calidad de código y buenas prácticas de revisión técnica.",
-          "Trabajo con contenedores y entornos reproducibles para acelerar despliegues y minimizar incidencias."
+          "Diseñé, escalé y mantuve microservicios financieros robustos para flujos transaccionales seguros de alta demanda.",
+          "Desarrollé y optimizó módulos en React Native para SDKs de pagos móviles, garantizando compatibilidad multiplataforma.",
+          "Optimicé motores de procesamiento de pagos y orquesté integraciones avanzadas en entornos REST y SOAP.",
+          "Implementé controles automatizados de calidad de código y promoví buenas prácticas de revisión técnica entre pares.",
+          "Trabajé con contenedores Docker y entornos reproducibles para acelerar despliegues continuos y minimizar incidencias."
         ],
-        "tags": ["Node.js", "React Native", "Microservicios", "Docker", "REST"]
+        "tags": ["React", "Node.js", "React Native", "Docker", "Microservicios"]
       },
       {
         "id": "intelix",
@@ -92,6 +107,7 @@
   "skills": {
     "label": "// Skills",
     "title": "Stack y capacidades",
+    "desc": "Herramientas y tecnologías con las que trabajo día a día",
     "categories": [
       {
         "title": "Backend & APIs",
@@ -147,7 +163,35 @@
     "label": "// Proyectos destacados",
     "title": "Trabajo seleccionado",
     "subtitle": "Proyectos y productos en los que he participado con foco en rendimiento y negocio.",
-    "items": []
+    "items": [
+      {
+        "title": "Nexus Pay SDK",
+        "type": "FinTech SDK / React Native",
+        "description": "SDK de procesamiento de pagos móviles de alto rendimiento para Android e iOS, integrando tokens seguros y transacciones optimizadas en baja latencia.",
+        "tech": ["React Native", "TypeScript", "Node.js", "Docker"],
+        "icon": "💳",
+        "demo": "#",
+        "github": "#"
+      },
+      {
+        "title": "Athena AI Operations",
+        "type": "Sistemas Inteligentes / Python & Node.js",
+        "description": "Plataforma de automatización de operaciones empresariales usando flujos de trabajo inteligentes con agentes de IA autónomos y trazabilidad distribuida.",
+        "tech": ["Node.js", "Python", "React", "LLMs", "Fastify"],
+        "icon": "🤖",
+        "demo": "#",
+        "github": "#"
+      },
+      {
+        "title": "Quantum Billing Core",
+        "type": "Arquitectura Microservicios / Express & PostgreSQL",
+        "description": "Motor de facturación transaccional escalable capaz de procesar de forma segura flujos recurrentes masivos, logrando reducir la latencia de respuesta en un 35%.",
+        "tech": ["Node.js", "Express", "PostgreSQL", "Docker", "CI/CD"],
+        "icon": "⚙️",
+        "demo": "#",
+        "github": "#"
+      }
+    ]
   },
   "contact": {
     "label": "// Contacto",

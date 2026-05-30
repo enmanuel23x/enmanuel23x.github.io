@@ -10,6 +10,21 @@
       { "id": "contact", "label": "Contact" }
     ]
   },
+  "ui": {
+    "themeToggle": "Change theme",
+    "langSelect": "Change language",
+    "hamburger": "Menu",
+    "backToTop": "Back to top",
+    "terminalTrigger": "Open developer terminal",
+    "terminalInput": "Command line",
+    "downloadCv": "Download CV",
+    "modalTitle": "Download Resume",
+    "modalClose": "Close modal",
+    "modalLightweight": "Lightweight text format",
+    "modalPrintReady": "Print-ready format",
+    "contactMe": "Contact me",
+    "viewSkills": "View skills"
+  },
   "profile": {
     "name": "Enmanuel Leon",
     "role": "Senior Fullstack Developer",
@@ -51,12 +66,12 @@
         "role": "Fullstack Developer (AI & Core Systems)",
         "company": "Entropy",
         "bullets": [
-          "Designed and implemented AI-assisted workflows with a focus on reliability and traceability.",
-          "Built internal tools to improve operational efficiency and reduce repetitive manual work.",
-          "Integrated intelligent interfaces with low-latency backend services for critical use cases.",
-          "Contributed to architecture decisions to evolve the tech stack without sacrificing stability."
+          "Designed and implemented production-grade AI agents and intelligent workflows, ensuring top-tier reliability and traceability.",
+          "Built automated internal tools and dashboard engines that optimized team operational efficiency on critical daily operations.",
+          "Architected and integrated responsive web interfaces connected to low-latency backend microservices for mission-critical apps.",
+          "Collaborated on key architecture and infrastructure decisions to scale the technical stack while securing high availability."
         ],
-        "tags": ["JavaScript", "TypeScript", "Python", "LLMs", "APIs"]
+        "tags": ["TypeScript", "Node.js", "React", "React Native", "Python", "LLMs"]
       },
       {
         "id": "epayco",
@@ -65,13 +80,13 @@
         "role": "Fullstack Developer (Semi Senior)",
         "company": "Interfell - ePayco",
         "bullets": [
-          "Built and maintained financial microservices supporting high-demand transactional flows.",
-          "Developed React Native modules and integrations for mobile payment SDKs, ensuring cross-platform compatibility.",
-          "Optimized payment engines and integration orchestration across REST and SOAP ecosystems.",
-          "Introduced code-quality controls and sound technical review practices.",
-          "Worked with containerized, reproducible environments to speed up deployments and reduce incidents."
+          "Architected, scaled, and maintained high-throughput financial microservices supporting secure payment transactions.",
+          "Developed and optimized React Native modules for mobile payment SDKs, securing flawless cross-platform performance.",
+          "Optimized core payment processing engines and orchestrated integrations across complex REST and SOAP architectures.",
+          "Introduced automated code-quality pipelines and established collaborative peer code-review standards.",
+          "Leveraged Docker and containerized, reproducible environments to accelerate deployment cycles and minimize live incidents."
         ],
-        "tags": ["Node.js", "React Native", "Microservicios", "Docker", "REST"]
+        "tags": ["React", "Node.js", "React Native", "Docker", "Microservices"]
       },
       {
         "id": "intelix",
@@ -92,6 +107,7 @@
   "skills": {
     "label": "// Skills",
     "title": "Stack and capabilities",
+    "desc": "Tools and technologies I work with every day",
     "categories": [
       {
         "title": "Backend & APIs",
@@ -147,12 +163,40 @@
     "label": "// Featured projects",
     "title": "Selected work",
     "subtitle": "Projects and products where I contributed with a strong focus on performance and business outcomes.",
-    "items": []
+    "items": [
+      {
+        "title": "Nexus Pay SDK",
+        "type": "FinTech SDK / React Native",
+        "description": "High-performance mobile payment processing SDK for Android and iOS, integrating secure tokenization and low-latency transactions.",
+        "tech": ["React Native", "TypeScript", "Node.js", "Docker"],
+        "icon": "💳",
+        "demo": "#",
+        "github": "#"
+      },
+      {
+        "title": "Athena AI Operations",
+        "type": "Intelligent Systems / Python & Node.js",
+        "description": "Enterprise operations automation platform leveraging intelligent workflows with autonomous AI agents and distributed traceability.",
+        "tech": ["Node.js", "Python", "React", "LLMs", "Fastify"],
+        "icon": "🤖",
+        "demo": "#",
+        "github": "#"
+      },
+      {
+        "title": "Quantum Billing Core",
+        "type": "Microservices Architecture / Express & PostgreSQL",
+        "description": "Scalable transactional billing engine designed to process recurring charges, reducing response latency by 35%.",
+        "tech": ["Node.js", "Express", "PostgreSQL", "Docker", "CI/CD"],
+        "icon": "⚙️",
+        "demo": "#",
+        "github": "#"
+      }
+    ]
   },
   "contact": {
     "label": "// Contact",
-    "title": "Let us connect",
-    "subtitle": "Open to opportunities where technology and business outcomes move forward together.",
+    "title": "Let's connect",
+    "subtitle": "Open to opportunities where technology and business align to create lasting impact.",
     "items": [
       {
         "label": "Email",
