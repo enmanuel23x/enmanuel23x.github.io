@@ -50,10 +50,10 @@
       "Basado en Valencia, Venezuela, opero en modalidad 100% remota con disponibilidad para horarios CET (Europa) y EST (América). Cuento con doble ciudadanía: Italiana (UE) y Venezolana."
     ],
     "stats": [
-      { "value": 6, "label": "Años de experiencia" },
-      { "value": 25, "label": "Proyectos relevantes" },
-      { "value": 3, "label": "Sectores de impacto" },
-      { "value": 2, "label": "Idiomas de trabajo" }
+      { "value": "6+", "label": "Años de experiencia" },
+      { "value": ">500K", "label": "Transacciones / mes" },
+      { "value": "99.9%", "label": "Uptime en producción" },
+      { "value": "CET/EST", "label": "Horarios de trabajo" }
     ]
   },
   "experience": {
@@ -71,6 +71,7 @@
           "Reduje el tiempo de procesamiento en un 65% en la emisión de reportes normativos complejos mediante el diseño e implementación de un servicio distribuido de generación asíncrona de artefactos y documentos en Fastify y Python, procesando más de 2.000 reportes mensuales con colas BullMQ y Redis.",
           "Arquitecté la capa backend del core de distribución de herramientas de IA (agentes, flujos y componentes), implementando soporte multi-instancia de alta concurrencia y comunicación Machine-to-Machine (M2M) segura con latencias inferiores a 50ms mediante APIs desacopladas y autenticación basada en tokens.",
           "Diseñé un motor de sincronización asíncrona periódica basado en crons distribuidos y tareas programadas en segundo plano que comunica de forma segura instancias de clientes en VPCs aisladas con la plataforma core, garantizando un 99.9% de consistencia de datos sin exponer endpoints a la red pública.",
+          "Lideré la definición de estándares de ingeniería y especificaciones técnicas (RFCs/ADRs), reduciendo la deuda técnica y acelerando la integración de nuevos microservicios entre pares de desarrollo.",
           "Operé microservicios distribuidos en AWS y GCP con 99.9% de disponibilidad, empaquetando componentes en contenedores Docker y configurando pipelines de CI/CD que redujeron los tiempos de despliegue de ~1 hora a ~10 minutos con observabilidad continua vía Sentry y CloudWatch."
         ],
         "tags": ["TypeScript", "Fastify", "Python", "AWS / GCP", "Redis / BullMQ", "M2M / VPC", "Docker"]
@@ -96,6 +97,7 @@
         "company": "Interfell - ePayco",
         "bullets": [
           "Sostuve una disponibilidad del 99.9% en servicios transaccionales de pasarela de pago procesando más de 500.000 operaciones mensuales mediante el desarrollo y mantenimiento de microservicios en Node.js (Express) y TypeScript sobre MySQL, integrando y manteniendo servicios auxiliares en PHP (Lumen).",
+          "Diseñé mecanismos de resiliencia e idempotencia para transacciones financieras críticas, implementando Circuit Breakers, Rate Limiting y reintentos exponenciales para asegurar cero duplicidad de cobros y mitigar caídas en pasarelas bancarias.",
           "Lideré la integración técnica de la pasarela de pago para clientes corporativos y comercios, orquestando flujos transaccionales entre interfaces web responsivas en React y servicios de backend conectados a través de APIs REST, GraphQL y servicios legados SOAP.",
           "Reduje la latencia de procesamiento de pagos en un 28% optimizando consultas críticas en MySQL, desacoplando tareas pesadas de validación y notificación mediante colas AWS SQS y refactorizando la orquestación de endpoints transaccionales.",
           "Disminuí el tiempo medio de resolución de incidencias (MTTR) en un 40% estandarizando entornos reproducibles con Docker, implementando pruebas automatizadas con Jest y centralizando el monitoreo de anomalías en Datadog y Sentry."
@@ -133,6 +135,8 @@
           "Comunicación M2M",
           "Escalabilidad Multi-instancia",
           "Aislamiento VPC & Networking",
+          "Idempotencia & Resiliencia",
+          "Circuit Breaker & Rate Limiting",
           "Asynchronous Workflows",
           "Multi-Cloud (AWS · GCP)",
           "Diseño de APIs (REST / GraphQL / SOAP)"
@@ -149,8 +153,10 @@
           "AWS SQS",
           "AWS CloudWatch",
           "AWS IAM",
+          "AWS CloudFormation",
           "GCP Cloud Run",
           "Docker",
+          "Docker Compose",
           "Linux",
           "NGINX",
           "DigitalOcean"
@@ -165,6 +171,8 @@
           "Fastify",
           "Express",
           "Python (FastAPI)",
+          "Prisma",
+          "Zod & TypeBox",
           "Lumen (PHP)",
           "REST APIs",
           "GraphQL",
@@ -226,6 +234,7 @@
           "Datadog",
           "Sentry",
           "Git / GitHub",
+          "OWASP & CORS",
           "TDD"
         ]
       }

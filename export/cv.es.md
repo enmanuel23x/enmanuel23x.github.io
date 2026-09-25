@@ -16,12 +16,12 @@ Ingeniero de Computación con más de 6 años de experiencia en desarrollo de so
 
 ## Habilidades Técnicas
 
-- **Backend & Arquitectura:** Node.js (Fastify, Express), Python (FastAPI), Microservicios, REST, GraphQL, SOAP, Arquitectura Orientada a Eventos (EDA), Comunicación M2M, soporte a servicios en PHP/Lumen
-- **Cloud, Redes & DevOps:** AWS (ECS, Lambda, RDS, S3, SQS, CloudWatch, IAM), GCP (Cloud Run), Docker, CI/CD (GitHub Actions), NGINX, Linux, Aislamiento VPC & Networking
-- **Datos & Mensajería:** MySQL, PostgreSQL, MongoDB, Redis, BullMQ, AWS SQS, Row-Level Security (RLS)
+- **Backend & Arquitectura:** Node.js (Fastify, Express), Python (FastAPI), Prisma, Zod & TypeBox, Microservicios, REST, GraphQL, SOAP, Event-Driven Architecture (EDA), Comunicación M2M, Idempotencia & Circuit Breaker
+- **Cloud, Redes & DevOps:** AWS (ECS, Lambda, RDS, S3, SQS, CloudWatch, IAM, CloudFormation), GCP (Cloud Run), Docker, Docker Compose, CI/CD (GitHub Actions), NGINX, Linux, Aislamiento VPC
+- **Datos & Mensajería:** MySQL, PostgreSQL, MongoDB, Redis, BullMQ, AWS SQS, Row-Level Security (RLS), RabbitMQ
 - **IA Aplicada & Automatización:** Integración de LLMs (OpenAI, Anthropic APIs), Generación Asíncrona de Artefactos, Orquestación de Agentes, RAG, Prompt Engineering, Tool Use
 - **Frontend & Mobile:** React, Next.js, Vite, React Native (Multiplataforma iOS/Android), TypeScript, JavaScript (ES6+), HTML5, Tailwind CSS
-- **Testing, Calidad & Observabilidad:** Vitest, Jest, Datadog, Sentry, CloudWatch, TDD
+- **Testing, Calidad & Seguridad:** Vitest, Jest, Datadog, Sentry, CloudWatch, OWASP, CORS, TDD
 
 ---
 
@@ -33,6 +33,7 @@ Ingeniero de Computación con más de 6 años de experiencia en desarrollo de so
 - **Reduje el tiempo de procesamiento en un 65%** en la emisión de reportes normativos complejos mediante el diseño e implementación de un servicio distribuido de generación asíncrona de artefactos y documentos en Fastify y Python, procesando más de 2.000 reportes mensuales con colas BullMQ y Redis.
 - **Arquitecté la capa backend del core de distribución de herramientas de IA** (agentes, flujos y componentes), implementando soporte multi-instancia de alta concurrencia y comunicación Machine-to-Machine (M2M) segura con latencias inferiores a 50ms mediante APIs desacopladas y autenticación basada en tokens.
 - **Diseñé un motor de sincronización asíncrona periódica** basado en crons distribuidos y tareas programadas en segundo plano que comunica de forma segura instancias de clientes en VPCs aisladas con la plataforma core, garantizando un 99.9% de consistencia de datos sin exponer endpoints a la red pública.
+- **Lideré la definición de estándares de ingeniería** y adopción de especificaciones técnicas (RFCs/ADRs), reduciendo la deuda técnica y acelerando la integración de nuevos microservicios entre pares de desarrollo.
 - **Operé microservicios distribuidos en AWS y GCP con 99.9% de disponibilidad**, empaquetando componentes en contenedores Docker y configurando pipelines de CI/CD que redujeron los tiempos de despliegue de ~1 hora a ~10 minutos con observabilidad continua vía Sentry y CloudWatch.
 
 ### Ingeniero de Software & Mobile (Consultor Externo / Part-time Contractor) | Fintech Scale-up (Billetera B2C · NDA)
@@ -46,6 +47,7 @@ Ingeniero de Computación con más de 6 años de experiencia en desarrollo de so
 *Junio 2021 - Abril 2024*
 
 - **Sostuve una disponibilidad del 99.9%** en servicios transaccionales de pasarela de pago procesando más de 500.000 operaciones mensuales mediante el desarrollo y mantenimiento de microservicios en Node.js (Express) y TypeScript sobre MySQL, integrando y manteniendo servicios auxiliares en PHP (Lumen).
+- **Diseñé mecanismos de resiliencia e idempotencia** para transacciones financieras críticas, implementando Circuit Breakers, Rate Limiting y reintentos exponenciales para asegurar cero duplicidad de cobros y mitigar caídas en pasarelas bancarias.
 - **Lideré la integración técnica de la pasarela de pago** para clientes corporativos y comercios, orquestando flujos transaccionales entre interfaces web responsivas en React y servicios de backend conectados a través de APIs REST, GraphQL y servicios legados SOAP.
 - **Reduje la latencia de procesamiento de pagos en un 28%** optimizando consultas críticas en MySQL, desacoplando tareas pesadas de validación y notificación mediante colas AWS SQS y refactorizando la orquestación de endpoints transaccionales.
 - **Disminuí el tiempo medio de resolución de incidencias (MTTR) en un 40%** estandarizando entornos reproducibles con Docker, implementando pruebas automatizadas con Jest y centralizando el monitoreo de anomalías en Datadog y Sentry.

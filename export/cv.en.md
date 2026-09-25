@@ -16,12 +16,12 @@ Computer Engineer with 6+ years of experience in mission-critical software engin
 
 ## Technical Skills
 
-- **Backend & Architecture:** Node.js (Fastify, Express), Python (FastAPI), Microservices, REST, GraphQL, SOAP, Event-Driven Architecture (EDA), M2M Communication, PHP/Lumen service maintenance
-- **Cloud, Networking & DevOps:** AWS (ECS, Lambda, RDS, S3, SQS, CloudWatch, IAM), GCP (Cloud Run), Docker, CI/CD (GitHub Actions), NGINX, Linux, VPC Isolation & Networking
-- **Databases & Messaging:** MySQL, PostgreSQL, MongoDB, Redis, BullMQ, AWS SQS, Row-Level Security (RLS)
+- **Backend & Architecture:** Node.js (Fastify, Express), Python (FastAPI), Prisma, Zod & TypeBox, Microservices, REST, GraphQL, SOAP, Event-Driven Architecture (EDA), M2M Communication, Idempotency & Circuit Breakers
+- **Cloud, Networking & DevOps:** AWS (ECS, Lambda, RDS, S3, SQS, CloudWatch, IAM, CloudFormation), GCP (Cloud Run), Docker, Docker Compose, CI/CD (GitHub Actions), NGINX, Linux, VPC Isolation
+- **Databases & Messaging:** MySQL, PostgreSQL, MongoDB, Redis, BullMQ, AWS SQS, Row-Level Security (RLS), RabbitMQ
 - **Applied AI & Automation:** LLM Integrations (OpenAI, Anthropic APIs), Asynchronous Artifact Generation, Agent Orchestration, RAG, Prompt Engineering, Tool Use
 - **Frontend & Mobile:** React, Next.js, Vite, React Native (Cross-platform iOS/Android), TypeScript, JavaScript (ES6+), HTML5, Tailwind CSS
-- **Testing, Quality & Observability:** Vitest, Jest, Datadog, Sentry, CloudWatch, TDD
+- **Testing, Quality & Security:** Vitest, Jest, Datadog, Sentry, CloudWatch, OWASP, CORS, TDD
 
 ---
 
@@ -33,6 +33,7 @@ Computer Engineer with 6+ years of experience in mission-critical software engin
 - **Reduced report generation processing time by 65%** by designing and deploying a distributed asynchronous document and artifact generation engine using Fastify and Python, processing over 2,000 complex audit reports monthly via BullMQ and Redis queues.
 - **Architected the backend layer of the core AI tooling platform** (agents, workflows, and skills), delivering high-concurrency multi-instance horizontal scaling and low-latency (<50ms) Machine-to-Machine (M2M) communication via decoupled APIs and token-based authentication.
 - **Designed a periodic asynchronous synchronization engine** using distributed crons and background workers that securely interconnects isolated customer VPC environments with the central core platform, maintaining 99.9% data consistency without exposing public endpoints.
+- **Steered engineering standards and architectural decision records** (RFCs/ADRs), cutting technical debt and accelerating cross-service integration across engineering peers.
 - **Operated distributed microservices across AWS and GCP with 99.9% uptime**, containerizing services in Docker and implementing CI/CD pipelines that reduced deployment times from ~1 hour to ~10 minutes, backed by real-time observability in Sentry and CloudWatch.
 
 ### Software & Mobile Engineer (Independent Consultant / Part-time Contractor) | Fintech Scale-up (B2C Wallet · NDA)
@@ -46,6 +47,7 @@ Computer Engineer with 6+ years of experience in mission-critical software engin
 *June 2021 - April 2024*
 
 - **Maintained 99.9% service uptime** across financial payment gateway services processing over 500,000 monthly transactions by engineering and maintaining transactional microservices in Node.js (Express) and TypeScript on MySQL, while integrating and supporting auxiliary services in PHP (Lumen).
+- **Engineered resilience and idempotency controls** for critical financial transactions, implementing Circuit Breakers, Rate Limiting, and exponential backoff retries to guarantee zero duplicate charges and isolate external banking failures.
 - **Led technical payment gateway integrations** for corporate merchants and partners, orchestrating transaction lifecycles between responsive React web applications and backend services connected across REST, GraphQL, and legacy SOAP APIs.
 - **Reduced payment processing latency by 28%** by optimizing critical MySQL queries, offloading asynchronous background tasks with AWS SQS queues, and refactoring transactional API orchestration layers.
 - **Decreased Mean Time to Resolution (MTTR) by 40%** by establishing reproducible Docker environments, comprehensive automated testing suites in Jest, and proactive anomaly monitoring via Datadog and Sentry.

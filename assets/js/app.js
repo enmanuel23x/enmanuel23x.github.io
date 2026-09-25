@@ -284,6 +284,15 @@ function renderStatic(data) {
     });
   });
 
+  const mobileDownloadText = document.getElementById("mobileCtaDownloadText");
+  if (mobileDownloadText && data.ui) {
+    mobileDownloadText.textContent = data.ui.downloadCv;
+  }
+  const mobileContactText = document.getElementById("mobileCtaContactText");
+  if (mobileContactText && data.ui) {
+    mobileContactText.textContent = data.ui.contactMe.replace(/^[^\w\s]+/, "").trim();
+  }
+
   const year = new Date().getFullYear();
   document.getElementById("footerText").innerHTML = data.footer.replace(
     "{year}",
@@ -486,18 +495,26 @@ function observeReveal() {
             .forEach((counter) => {
               if (counter.dataset.animated) return;
               counter.dataset.animated = "true";
-              const target = parseInt(counter.dataset.count, 10);
+              const raw = counter.dataset.count;
+              const num = parseFloat(raw.replace(/[^0-9.]/g, ""));
+              if (isNaN(num)) {
+                counter.textContent = raw;
+                return;
+              }
+              const prefix = raw.startsWith(">") ? ">" : "";
+              const suffix = raw.includes("%") ? "%" : (raw.includes("K") ? "K" : (raw.includes("+") ? "+" : ""));
               let current = 0;
-              const step = target / 40;
+              const step = num / 25;
               const interval = setInterval(() => {
                 current += step;
-                if (current >= target) {
-                  counter.textContent = target + "+";
+                if (current >= num) {
+                  counter.textContent = `${prefix}${num}${suffix}`;
                   clearInterval(interval);
                 } else {
-                  counter.textContent = Math.floor(current) + "+";
+                  const val = Number.isInteger(num) ? Math.floor(current) : current.toFixed(1);
+                  counter.textContent = `${prefix}${val}${suffix}`;
                 }
-              }, 40);
+              }, 35);
             });
         }
       });
@@ -613,6 +630,10 @@ function initGlobalInteractions() {
     if (backToTop) {
       backToTop.classList.toggle("visible", scrollY > 500);
     }
+    const mobileCta = document.getElementById("mobileCtaBar");
+    if (mobileCta) {
+      mobileCta.classList.toggle("visible", scrollY > 150);
+    }
 
     let current = "";
     sections.forEach((section) => {
@@ -631,6 +652,14 @@ function initGlobalInteractions() {
   if (backToTop) {
     backToTop.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  const mobileDownloadBtn = document.getElementById("mobileCtaDownload");
+  if (mobileDownloadBtn) {
+    mobileDownloadBtn.addEventListener("click", () => {
+      const mainDownload = document.getElementById("downloadBtn");
+      if (mainDownload) mainDownload.click();
     });
   }
 
@@ -689,9 +718,24 @@ function initGlobalInteractions() {
     navLinks.classList.toggle("open");
   });
 
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
+  // Smooth scroll for all internal hash links with accurate navbar offset
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+      if (!href || href === "#") return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        navLinks.classList.remove("open");
+        const nav = document.getElementById("navbar");
+        const navHeight = nav ? nav.offsetHeight : 70;
+        const targetTop = target.getBoundingClientRect().top + window.pageYOffset - (navHeight + 14);
+        window.scrollTo({
+          top: Math.max(0, targetTop),
+          behavior: "smooth",
+        });
+        history.pushState(null, null, href);
+      }
     });
   });
 
@@ -708,6 +752,18 @@ function initGlobalInteractions() {
       });
     });
   }
+
+  // Reactive body class to hide floating buttons whenever a modal is active
+  const downloadModal = document.getElementById("downloadModal");
+  const terminalOverlay = document.getElementById("terminalOverlay");
+  const syncModalOpenClass = () => {
+    const isDownloadOpen = downloadModal && downloadModal.getAttribute("aria-hidden") === "false";
+    const isTerminalOpen = terminalOverlay && terminalOverlay.getAttribute("aria-hidden") === "false" && !terminalOverlay.classList.contains("minimized-mode");
+    document.body.classList.toggle("modal-open", Boolean(isDownloadOpen || isTerminalOpen));
+  };
+  const modalObserver = new MutationObserver(syncModalOpenClass);
+  if (downloadModal) modalObserver.observe(downloadModal, { attributes: true, attributeFilter: ["aria-hidden"] });
+  if (terminalOverlay) modalObserver.observe(terminalOverlay, { attributes: true, attributeFilter: ["aria-hidden", "class"] });
 }
 
 function initTagHighlighting() {
@@ -1220,20 +1276,64 @@ function initKeyboardShortcuts() {
   });
 }
 
+function scrollToCurrentHash(behavior = "smooth") {
+  const hash = window.location.hash;
+  if (!hash || hash === "#") return;
+  try {
+    const target = document.querySelector(hash);
+    if (!target) return;
+
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const nav = document.getElementById("navbar");
+        const navHeight = nav ? nav.offsetHeight : 70;
+        const targetTop = target.getBoundingClientRect().top + window.pageYOffset - (navHeight + 14);
+        window.scrollTo({
+          top: Math.max(0, targetTop),
+          behavior: behavior,
+        });
+        const mobileCta = document.getElementById("mobileCtaBar");
+        if (mobileCta) {
+          mobileCta.classList.toggle("visible", targetTop > 150);
+        }
+      }, 100);
+    });
+  } catch (err) {
+    console.warn("Could not scroll to hash target:", hash, err);
+  }
+}
+
 async function hydrate() {
   state.data = await loadData(state.lang);
   renderStatic(state.data);
   startTyping(state.data);
   observeReveal();
+  if (window.location.hash) {
+    scrollToCurrentHash("smooth");
+  }
 }
 
 (async function init() {
+  if ("scrollRestoration" in history && window.location.hash) {
+    history.scrollRestoration = "manual";
+  }
   initParticles();
   initGlobalInteractions();
   initTagHighlighting();
   initSpotlightHighlighting();
   initTerminal();
   initKeyboardShortcuts();
+
+  window.addEventListener("hashchange", () => {
+    scrollToCurrentHash("smooth");
+  });
+
+  window.addEventListener("load", () => {
+    if (window.location.hash) {
+      scrollToCurrentHash("smooth");
+    }
+  });
+
   try {
     await hydrate();
   } catch (error) {

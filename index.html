@@ -17,14 +17,14 @@
     <meta property="og:url" content="https://enmanuel23x.github.io/" />
     <meta property="og:title" content="Enmanuel Leon — Senior Fullstack Engineer" />
     <meta property="og:description" content="Ingeniero de Computación especializado en sistemas distribuidos, automatización con IA y plataformas transaccionales con TypeScript, Node.js, Python, AWS/GCP." />
-    <meta property="og:image" content="https://enmanuel23x.github.io/img/Profile-pic.jpeg" />
+    <meta property="og:image" content="https://enmanuel23x.github.io/img/og-banner.png" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://enmanuel23x.github.io/" />
     <meta name="twitter:title" content="Enmanuel Leon — Senior Fullstack Engineer" />
     <meta name="twitter:description" content="Ingeniero de Computación especializado en sistemas distribuidos, automatización con IA y plataformas transaccionales con TypeScript, Node.js, Python, AWS/GCP." />
-    <meta name="twitter:image" content="https://enmanuel23x.github.io/img/Profile-pic.jpeg" />
+    <meta name="twitter:image" content="https://enmanuel23x.github.io/img/og-banner.png" />
 
     <!-- JSON-LD Structured Data for ATS & Search Engines -->
     <script type="application/ld+json">
@@ -114,12 +114,12 @@
             <button class="lang-switch-btn" data-lang="en" data-tooltip="English">EN</button>
             <span class="lang-switch-slider"></span>
           </div>
-          <div class="accent-dots" id="accentSelect" aria-label="Seleccionar tema visual">
-            <button class="accent-dot dot-indigo" data-theme="indigo" data-tooltip="Indigo" title="Indigo theme"></button>
-            <button class="accent-dot dot-matrix" data-theme="matrix" data-tooltip="Matrix 🟩" title="Matrix theme"></button>
-            <button class="accent-dot dot-dracula" data-theme="dracula" data-tooltip="Dracula 🟪" title="Dracula theme"></button>
-            <button class="accent-dot dot-cyber" data-theme="cyber" data-tooltip="Cyberpunk 💖🩵" title="Cyber theme"></button>
-            <button class="accent-dot dot-classic" data-theme="classic" data-tooltip="Classic ⬜" title="Slate theme"></button>
+          <div class="accent-dots" id="accentSelect" aria-label="Seleccionar tema visual" role="group">
+            <button class="accent-dot dot-indigo" data-theme="indigo" data-tooltip="Indigo" title="Tema Índigo" aria-label="Tema visual Índigo"></button>
+            <button class="accent-dot dot-matrix" data-theme="matrix" data-tooltip="Matrix 🟩" title="Tema Matrix" aria-label="Tema visual Matrix"></button>
+            <button class="accent-dot dot-dracula" data-theme="dracula" data-tooltip="Dracula 🟪" title="Tema Dracula" aria-label="Tema visual Dracula"></button>
+            <button class="accent-dot dot-cyber" data-theme="cyber" data-tooltip="Cyberpunk 💖🩵" title="Tema Cyberpunk" aria-label="Tema visual Cyberpunk"></button>
+            <button class="accent-dot dot-classic" data-theme="classic" data-tooltip="Classic ⬜" title="Tema Clásico Slate" aria-label="Tema visual Clásico Slate"></button>
           </div>
           <button class="theme-switch" id="themeToggle" aria-label="Cambiar tema">
             <span class="theme-switch-icon">☀️</span>
@@ -292,9 +292,9 @@
       <div class="terminal-container" style="elevation: 2">
         <div class="terminal-header">
           <div class="terminal-buttons">
-            <span class="t-btn t-close" id="terminalCloseBtn"></span>
-            <span class="t-btn t-minimize"></span>
-            <span class="t-btn t-maximize"></span>
+            <span class="t-btn t-close" id="terminalCloseBtn" role="button" tabindex="0" aria-label="Cerrar terminal" title="Cerrar terminal">✕</span>
+            <span class="t-btn t-minimize" aria-hidden="true"></span>
+            <span class="t-btn t-maximize" aria-hidden="true"></span>
           </div>
           <div class="terminal-title">enmanuel-leon-shell &middot; zsh</div>
           <button class="terminal-sync-btn" id="terminalSyncBtn" title="Sync with System Theme" aria-label="Sincronizar con tema del sistema">🌓</button>
@@ -363,10 +363,20 @@
       </div>
     </div>
 
+    <!-- Mobile Sticky Quick Action Bar -->
+    <div class="mobile-cta-bar" id="mobileCtaBar" aria-label="Acciones rápidas móviles">
+      <button class="mobile-cta-btn btn-cta-download" id="mobileCtaDownload" type="button">
+        📄 <span id="mobileCtaDownloadText">Descargar CV</span>
+      </button>
+      <a href="#contact" class="mobile-cta-btn btn-cta-contact" id="mobileCtaContact">
+        ✉️ <span id="mobileCtaContactText">Contactar</span>
+      </a>
+    </div>
+
     <!-- Fallback for Crawlers and Users without JS -->
     <noscript>
       <div style="max-width: 800px; margin: 40px auto; padding: 24px; font-family: system-ui, sans-serif; background: #ffffff; color: #111827; border-radius: 8px;">
-        <h1>Enmanuel Leon — Senior Fullstack & Backend Engineer</h1>
+        <h1>Enmanuel Leon — Senior Fullstack Engineer</h1>
         <p>Ingeniero de Computación con más de 6 años de experiencia en sistemas distribuidos, microservicios, IA aplicada y arquitecturas Cloud (AWS/GCP).</p>
         <h2>Contacto</h2>
         <p>Email: <a href="mailto:enma2310@outlook.com">enma2310@outlook.com</a> | <a href="https://www.linkedin.com/in/enmanuel-leon-48b11714b/">LinkedIn</a> | <a href="https://github.com/enmanuel23x">GitHub</a></p>

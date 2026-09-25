@@ -50,10 +50,10 @@
       "Based in Valencia, Venezuela, I work 100% remotely with full availability for CET (Europe) and EST (Americas) hours. I hold dual citizenship: Italian (EU) and Venezuelan."
     ],
     "stats": [
-      { "value": 6, "label": "Years of experience" },
-      { "value": 25, "label": "Relevant projects" },
-      { "value": 3, "label": "Industry domains" },
-      { "value": 2, "label": "Working languages" }
+      { "value": "6+", "label": "Years of experience" },
+      { "value": ">500K", "label": "Monthly transactions" },
+      { "value": "99.9%", "label": "Production uptime" },
+      { "value": "CET/EST", "label": "Working timezones" }
     ]
   },
   "experience": {
@@ -71,6 +71,7 @@
           "Reduced report generation processing time by 65% by designing and deploying a distributed asynchronous document and artifact generation engine using Fastify and Python, processing over 2,000 complex audit reports monthly via BullMQ and Redis queues.",
           "Architected the backend layer of the core AI tooling platform (agents, workflows, and skills), delivering high-concurrency multi-instance horizontal scaling and low-latency (<50ms) Machine-to-Machine (M2M) communication via decoupled APIs and token-based authentication.",
           "Designed a periodic asynchronous synchronization engine using distributed crons and background workers that securely interconnects isolated customer VPC environments with the central core platform, maintaining 99.9% data consistency without exposing public endpoints.",
+          "Steered engineering standards and architectural decision records (RFCs/ADRs), cutting technical debt and accelerating cross-service integration across engineering peers.",
           "Operated distributed microservices across AWS and GCP with 99.9% uptime, containerizing services in Docker and implementing CI/CD pipelines that reduced deployment times from ~1 hour to ~10 minutes, backed by real-time observability in Sentry and CloudWatch."
         ],
         "tags": ["TypeScript", "Fastify", "Python", "AWS / GCP", "Redis / BullMQ", "M2M / VPC", "Docker"]
@@ -96,6 +97,7 @@
         "company": "Interfell - ePayco",
         "bullets": [
           "Maintained 99.9% service uptime across financial payment gateway services processing over 500,000 monthly transactions by engineering and maintaining transactional microservices in Node.js (Express) and TypeScript on MySQL, while integrating and supporting auxiliary services in PHP (Lumen).",
+          "Engineered resilience and idempotency controls for critical financial transactions, implementing Circuit Breakers, Rate Limiting, and exponential backoff retries to guarantee zero duplicate charges and isolate external banking failures.",
           "Led technical payment gateway integrations for corporate merchants and partners, orchestrating transaction lifecycles between responsive React web applications and backend services connected across REST, GraphQL, and legacy SOAP APIs.",
           "Reduced payment processing latency by 28% by optimizing critical MySQL queries, offloading asynchronous background tasks with AWS SQS queues, and refactoring transactional API orchestration layers.",
           "Decreased Mean Time to Resolution (MTTR) by 40% by establishing reproducible Docker environments, comprehensive automated testing suites in Jest, and proactive anomaly monitoring via Datadog and Sentry."
@@ -133,6 +135,8 @@
           "M2M Communication",
           "Multi-instance Scaling",
           "VPC Isolation & Networking",
+          "Idempotency & Resilience",
+          "Circuit Breaker & Rate Limiting",
           "Asynchronous Workflows",
           "Multi-Cloud (AWS · GCP)",
           "API Design (REST / GraphQL / SOAP)"
@@ -149,8 +153,10 @@
           "AWS SQS",
           "AWS CloudWatch",
           "AWS IAM",
+          "AWS CloudFormation",
           "GCP Cloud Run",
           "Docker",
+          "Docker Compose",
           "Linux",
           "NGINX",
           "DigitalOcean"
@@ -165,6 +171,8 @@
           "Fastify",
           "Express",
           "Python (FastAPI)",
+          "Prisma",
+          "Zod & TypeBox",
           "Lumen (PHP)",
           "REST APIs",
           "GraphQL",
@@ -226,6 +234,7 @@
           "Datadog",
           "Sentry",
           "Git / GitHub",
+          "OWASP & CORS",
           "TDD"
         ]
       }

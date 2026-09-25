@@ -1540,7 +1540,7 @@ section {
   background: rgba(9, 9, 11, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  z-index: 2000;
+  z-index: 20000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1703,7 +1703,7 @@ section {
   background: rgba(9, 9, 11, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  z-index: 2100;
+  z-index: 25000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2151,6 +2151,120 @@ html.theme-classic .terminal-container {
 }
 
 /* ═══════════════════════════════════════
+   ACCESSIBILITY & FOCUS VISIBILITY
+   ═══════════════════════════════════════ */
+:focus-visible {
+  outline: 2px solid var(--accent-light) !important;
+  outline-offset: 3px !important;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent-light) !important;
+  outline-offset: 2px !important;
+}
+
+/* ═══════════════════════════════════════
+   MOBILE STICKY ACTION BAR
+   ═══════════════════════════════════════ */
+.mobile-cta-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-cta-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    padding: 0.75rem 1rem;
+    padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    background: rgba(18, 18, 24, 0.94);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid var(--border);
+    gap: 0.75rem;
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.45);
+  }
+
+  [data-theme="light"] .mobile-cta-bar {
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .mobile-cta-bar.visible {
+    transform: translateY(0);
+  }
+
+  /* Move floating utility buttons with clear breathing room above mobile sticky bar */
+  .back-to-top {
+    bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)) !important;
+    right: 1.25rem !important;
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .terminal-trigger {
+    bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)) !important;
+    left: 1.25rem !important;
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .mobile-cta-btn {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.65rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+
+  .btn-cta-download {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+  }
+
+  [data-theme="light"] .btn-cta-download {
+    background: #f4f4f5;
+  }
+
+  .btn-cta-contact {
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    color: #ffffff;
+    box-shadow: 0 4px 14px var(--accent-glow);
+  }
+}
+
+/* Hide floating buttons and sticky bar when modal or terminal is open */
+body.modal-open .mobile-cta-bar,
+body.modal-open .back-to-top,
+body.modal-open .terminal-trigger,
+body:has(#downloadModal[aria-hidden="false"]) .mobile-cta-bar,
+body:has(#downloadModal[aria-hidden="false"]) .back-to-top,
+body:has(#downloadModal[aria-hidden="false"]) .terminal-trigger,
+body:has(#terminalOverlay[aria-hidden="false"]:not(.minimized-mode)) .mobile-cta-bar,
+body:has(#terminalOverlay[aria-hidden="false"]:not(.minimized-mode)) .back-to-top,
+body:has(#terminalOverlay[aria-hidden="false"]:not(.minimized-mode)) .terminal-trigger {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translateY(24px) !important;
+}
+
+/* ═══════════════════════════════════════
    PRINT STYLESHEET (ATS & BROWSER PRINT)
    ═══════════════════════════════════════ */
 @media print {
@@ -2188,6 +2302,7 @@ html.theme-classic .terminal-container {
   .lang-switch,
   .hamburger,
   .contact-copy-btn,
+  .mobile-cta-bar,
   .hero-avatar-glow {
     display: none !important;
   }
