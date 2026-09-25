@@ -58,6 +58,11 @@ function renderStatic(data) {
   document.getElementById("heroGreeting").textContent =
     state.lang === "es" ? "Hola, soy" : "Hi, I am";
   
+  const heroBadgeEl = document.getElementById("heroBadgeText");
+  if (heroBadgeEl && data.hero && data.hero.badge) {
+    heroBadgeEl.textContent = data.hero.badge;
+  }
+  
   const emailIcon = `<svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>`;
   const codeIcon = `<svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>`;
   
@@ -80,76 +85,84 @@ function renderStatic(data) {
      )
      .join("");
  
-   document.getElementById("expLabel").textContent = data.experience.label;
-   document.getElementById("expTitle").textContent = data.experience.title;
-   document.getElementById("expDesc").textContent =
-     data.experience.subtitle;
-   document.getElementById("experienceTimeline").innerHTML =
-     data.experience.items
-       .map(
-         (job) => `
-     <div class="timeline-item reveal">
-       <div class="timeline-dot"></div>
-       <div class="timeline-card" style="elevation: 2">
-         <span class="timeline-date">${escapeHtml(job.period)}</span>
-         <h3 class="timeline-role">${escapeHtml(job.role)}</h3>
-         <p class="timeline-company">${escapeHtml(job.company)} &middot; ${escapeHtml(job.location)}</p>
-         <ul class="timeline-desc">
-           ${job.bullets.map((b) => `<li>${escapeHtml(b)}</li>`).join("")}
-         </ul>
-         <div class="timeline-tags">
-           ${job.tags.map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
-         </div>
-       </div>
-     </div>
-   `,
-       )
-       .join("");
- 
-   document.getElementById("skillsLabel").textContent = data.skills.label;
-   document.getElementById("skillsTitle").textContent = data.skills.title;
-   document.getElementById("skillsDesc").textContent = data.skills.desc;
+  const highlightMetrics = (text) => {
+    return escapeHtml(text).replace(/(\b\d+(?:\.\d+)?%|<50ms|>2\.000|~200|500\.000)/g, '<span class="metric-chip">$1</span>');
+  };
 
-  const skillIcons = [
-    `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-svg"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>`,
-    `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-svg"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>`,
-    `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-svg"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>`,
-    `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-svg"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m11.314 11.314l.707-.707M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"></path></svg>`
-  ];
-  const skillColors = [
+  document.getElementById("expLabel").textContent = data.experience.label;
+  document.getElementById("expTitle").textContent = data.experience.title;
+  document.getElementById("expDesc").textContent =
+    data.experience.subtitle;
+  document.getElementById("experienceTimeline").innerHTML =
+    data.experience.items
+      .map(
+        (job) => `
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card" style="elevation: 2">
+        <span class="timeline-date">${escapeHtml(job.period)}</span>
+        <h3 class="timeline-role">${escapeHtml(job.role)}</h3>
+        <p class="timeline-company">${escapeHtml(job.company)} &middot; ${escapeHtml(job.location)}</p>
+        <ul class="timeline-desc">
+          ${job.bullets.map((b) => `<li>${highlightMetrics(b)}</li>`).join("")}
+        </ul>
+        <div class="timeline-tags">
+          ${job.tags.map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
+        </div>
+      </div>
+    </div>
+  `,
+      )
+      .join("");
+ 
+  document.getElementById("skillsLabel").textContent = data.skills.label;
+  document.getElementById("skillsTitle").textContent = data.skills.title;
+  document.getElementById("skillsDesc").textContent = data.skills.desc;
+
+  const categoryIcons = {
+    architecture: `<svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>`,
+    cloud: `<svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>`,
+    backend: `<svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>`,
+    data: `<svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>`,
+    ai: `<svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path><circle cx="12" cy="12" r="4"></circle></svg>`,
+    frontend: `<svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>`,
+    devops: `<svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>`,
+  };
+
+  const categoryColors = [
     "rgba(99, 102, 241, 0.12)",
+    "rgba(16, 185, 129, 0.12)",
     "rgba(168, 85, 247, 0.12)",
-    "rgba(20, 184, 166, 0.12)",
     "rgba(249, 115, 22, 0.12)",
+    "rgba(6, 182, 212, 0.12)",
+    "rgba(236, 72, 153, 0.12)",
+    "rgba(139, 92, 246, 0.12)"
   ];
 
   document.getElementById("skillsGrid").innerHTML = data.skills.categories
     .map(
-      (cat, idx) => `
-    <div class="skill-category" style="elevation: 2">
-      <div class="skill-category-header">
-        <div class="skill-icon" style="background:${skillColors[idx % skillColors.length]};">${skillIcons[idx % skillIcons.length]}</div>
-        <h3 class="skill-category-title">${escapeHtml(cat.title)}</h3>
-      </div>
-      <div class="skill-items-container">
-        ${cat.items
-          .map(
-            (it) => `
-          <div class="skill-item">
-            <div class="skill-info">
-              <span class="skill-name">${escapeHtml(it.name)}</span>
-              <span class="skill-percent">${it.level}%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width="${it.level}%"></div>
-            </div>
+      (cat, idx) => {
+        const iconSvg = categoryIcons[cat.icon] || categoryIcons.backend;
+        const bgCol = categoryColors[idx % categoryColors.length];
+        const tagsHtml = cat.items
+          .map((item) => {
+            const name = typeof item === "string" ? item : (item.name || "");
+            return `<span class="stack-tag">${escapeHtml(name)}</span>`;
+          })
+          .join("");
+
+        return `
+        <div class="skill-category stack-card" style="elevation: 2">
+          <div class="skill-category-header">
+            <div class="skill-icon" style="background:${bgCol};">${iconSvg}</div>
+            <h3 class="skill-category-title">${escapeHtml(cat.title)}</h3>
           </div>
-        `,
-          )
-          .join("")}
-      </div>
-    </div>
-  `,
+          <div class="stack-tags-container">
+            ${tagsHtml}
+          </div>
+        </div>
+        `;
+      }
     )
     .join("");
 
@@ -232,9 +245,16 @@ function renderStatic(data) {
     .map((item) => {
       const icon = contactIcons[item.label] || "🔗";
       const href = item.href || "#";
+      const isEmail = item.label.toLowerCase().includes("email");
       const tag = item.href ? "a" : "div";
       const attrs = item.href
         ? `href="${href}" ${item.external ? 'target="_blank" rel="noopener noreferrer"' : ""}`
+        : "";
+      const copyBtn = isEmail
+        ? `<button type="button" class="contact-copy-btn" data-email="${escapeHtml(item.value)}" title="${state.lang === "es" ? "Copiar email" : "Copy email"}" aria-label="${state.lang === "es" ? "Copiar email" : "Copy email"}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="copy-svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span class="copy-tooltip">${state.lang === "es" ? "¡Copiado!" : "Copied!"}</span>
+          </button>`
         : "";
       return `
       <${tag} ${attrs} class="contact-card" style="elevation: 2">
@@ -243,10 +263,26 @@ function renderStatic(data) {
           <div class="label">${escapeHtml(item.label)}</div>
           <div class="value">${escapeHtml(item.value)}</div>
         </div>
+        ${copyBtn}
       </${tag}>
     `;
     })
     .join("");
+
+  // Attach event listener for copy email buttons
+  document.querySelectorAll(".contact-copy-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const email = btn.getAttribute("data-email");
+      if (navigator.clipboard && email) {
+        navigator.clipboard.writeText(email).then(() => {
+          btn.classList.add("copied");
+          setTimeout(() => btn.classList.remove("copied"), 2200);
+        });
+      }
+    });
+  });
 
   const year = new Date().getFullYear();
   document.getElementById("footerText").innerHTML = data.footer.replace(
@@ -746,10 +782,10 @@ function initTerminal() {
     const paragraphs = state.data ? state.data.about.paragraphs.join("\n\n") : "Enmanuel Leon — Senior Fullstack Developer";
     
     let skillsStr = "--- TECHNICAL STACK ---\n";
-    if (state.data) {
+    if (state.data && state.data.skills) {
       state.data.skills.categories.forEach(cat => {
         skillsStr += `${cat.title}:\n`;
-        const items = cat.items.map(i => `  • ${i.name} (${i.level}%)`).join("\n");
+        const items = cat.items.map(i => typeof i === "string" ? `  • ${i}` : `  • ${i.name || i}`).join("\n");
         skillsStr += `${items}\n\n`;
       });
     } else {

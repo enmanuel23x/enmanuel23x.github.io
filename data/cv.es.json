@@ -6,6 +6,7 @@
       { "id": "about", "label": "Sobre mí" },
       { "id": "experience", "label": "Experiencia" },
       { "id": "skills", "label": "Skills" },
+      { "id": "projects", "label": "Proyectos" },
       { "id": "education", "label": "Estudios" },
       { "id": "contact", "label": "Contacto" }
     ]
@@ -23,7 +24,9 @@
     "modalLightweight": "Formato de texto ligero",
     "modalPrintReady": "Formato listo para impresión",
     "contactMe": "Contáctame",
-    "viewSkills": "Ver skills"
+    "viewSkills": "Ver skills",
+    "copyEmail": "Copiar email",
+    "copied": "¡Copiado!"
   },
   "profile": {
     "name": "Enmanuel Leon",
@@ -116,44 +119,115 @@
     ]
   },
   "skills": {
-    "label": "// Skills",
-    "title": "Stack y capacidades",
-    "desc": "Tecnologías, arquitectura y herramientas que utilizo en producción",
+    "label": "// Stack",
+    "title": "Patrones, tecnologías y herramientas",
+    "desc": "Herramientas de arquitectura, backend, cloud e IA que utilizo en producción",
     "categories": [
       {
-        "title": "Backend & Arquitectura",
+        "title": "Arquitectura & Patrones",
+        "icon": "architecture",
         "items": [
-          { "name": "Node.js (Fastify / Express)", "level": 92 },
-          { "name": "TypeScript & Python", "level": 90 },
-          { "name": "REST / GraphQL / SOAP APIs", "level": 88 },
-          { "name": "Arquitectura Orientada a Eventos & M2M", "level": 88 }
+          "System Design",
+          "Sistemas Distribuidos",
+          "Microservicios",
+          "Event-Driven Architecture (EDA)",
+          "Comunicación M2M",
+          "Escalabilidad Multi-instancia",
+          "Aislamiento VPC & Networking",
+          "Asynchronous Workflows",
+          "Multi-Cloud (AWS · GCP)",
+          "Diseño de APIs (REST / GraphQL / SOAP)"
         ]
       },
       {
-        "title": "Cloud, Redes & DevOps",
+        "title": "Cloud & Infraestructura",
+        "icon": "cloud",
         "items": [
-          { "name": "Multi-Cloud (AWS · GCP)", "level": 88 },
-          { "name": "Docker & CI/CD Pipelines", "level": 86 },
-          { "name": "Aislamiento VPC & Networking", "level": 84 },
-          { "name": "Linux & NGINX", "level": 85 }
+          "AWS ECS",
+          "AWS Lambda",
+          "AWS RDS",
+          "AWS S3",
+          "AWS SQS",
+          "AWS CloudWatch",
+          "AWS IAM",
+          "GCP Cloud Run",
+          "Docker",
+          "Linux",
+          "NGINX",
+          "DigitalOcean"
+        ]
+      },
+      {
+        "title": "Backend & APIs",
+        "icon": "backend",
+        "items": [
+          "Node.js",
+          "TypeScript",
+          "Fastify",
+          "Express",
+          "Python (FastAPI)",
+          "Lumen (PHP)",
+          "REST APIs",
+          "GraphQL",
+          "SOAP",
+          "Tokens & Autenticación M2M"
         ]
       },
       {
         "title": "Datos & Mensajería",
+        "icon": "data",
         "items": [
-          { "name": "MySQL & PostgreSQL", "level": 88 },
-          { "name": "Redis / BullMQ / AWS SQS", "level": 88 },
-          { "name": "Row-Level Security (RLS) & Auth", "level": 85 },
-          { "name": "MongoDB", "level": 82 }
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB",
+          "Redis",
+          "BullMQ",
+          "AWS SQS",
+          "Row-Level Security (RLS)",
+          "RabbitMQ"
         ]
       },
       {
-        "title": "IA Aplicada, Frontend & Mobile",
+        "title": "IA Aplicada & Automatización",
+        "icon": "ai",
         "items": [
-          { "name": "Generación Asíncrona de Artefactos", "level": 90 },
-          { "name": "Integración de LLMs & Agentes", "level": 86 },
-          { "name": "React / Next.js / Vite", "level": 88 },
-          { "name": "React Native (Multiplataforma)", "level": 85 }
+          "Integración de LLMs (OpenAI / Anthropic)",
+          "Generación Asíncrona de Artefactos",
+          "Orquestación de Agentes",
+          "RAG Pipelines",
+          "Prompt Engineering",
+          "Tool Use & Function Calling",
+          "OpenCode",
+          "Cursor",
+          "GitHub Copilot",
+          "n8n"
+        ]
+      },
+      {
+        "title": "Frontend & Mobile",
+        "icon": "frontend",
+        "items": [
+          "React",
+          "Next.js",
+          "Vite",
+          "React Native (iOS / Android)",
+          "JavaScript (ES6+)",
+          "Redux / Zustand",
+          "HTML5 / CSS3",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "title": "DevOps, Testing & Calidad",
+        "icon": "devops",
+        "items": [
+          "CI/CD (GitHub Actions)",
+          "Vitest",
+          "Jest",
+          "Datadog",
+          "Sentry",
+          "Git / GitHub",
+          "TDD"
         ]
       }
     ]
