@@ -835,7 +835,7 @@ function initTerminal() {
   }
 
   const getVirtualFiles = () => {
-    const paragraphs = state.data ? state.data.about.paragraphs.join("\n\n") : "Enmanuel Leon — Senior Fullstack Developer";
+    const paragraphs = state.data ? state.data.about.paragraphs.join("\n\n") : "Enmanuel Leon — Senior Fullstack Engineer";
     
     let skillsStr = "--- TECHNICAL STACK ---\n";
     if (state.data && state.data.skills) {
@@ -845,7 +845,7 @@ function initTerminal() {
         skillsStr += `${items}\n\n`;
       });
     } else {
-      skillsStr += "JavaScript, TypeScript, Node.js, React, Python, AWS, GCP, Redis, LLMs\n";
+      skillsStr += "JavaScript, TypeScript, Node.js, Python, Fastify, AWS, GCP, Redis, BullMQ, React\n";
     }
 
     let expStr = "--- EXPERIENCE TIMELINE ---\n";
@@ -858,7 +858,7 @@ function initTerminal() {
         expStr += "\n";
       });
     } else {
-      expStr += "Senior Fullstack Developer\n";
+      expStr += "Senior Fullstack Engineer\n";
     }
 
     let eduStr = "--- EDUCATION ---\n";
@@ -988,7 +988,7 @@ Thanks for checking out my interactive shell. Let's build something awesome toge
 <span style="color:#fbbf24">Shell:</span> zsh 5.9
 <span style="color:#fbbf24">Theme:</span> ${currentThemeName}
 <span style="color:#fbbf24">CPU:</span> M-Series Max (Hyper-optimized)
-<span style="color:#fbbf24">Stack:</span> Node, React, React Native, TS, Python, LLMs
+<span style="color:#fbbf24">Stack:</span> Node.js, TypeScript, Python, Fastify, AWS, Redis, BullMQ, React
 <span style="color:#fbbf24">Contact:</span> enma2310@outlook.com
 `;
       print(`<div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap"><div>${asciiArt}</div><div>${sysInfo}</div></div>`);

@@ -88,8 +88,9 @@
     }
     </script>
     
-    <!-- Dynamic Custom Initials Favicon -->
+    <!-- Dynamic Custom Initials Favicon & Apple Touch Icon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236366f1'/%3E%3Ctext x='50%25' y='66%25' font-family='system-ui, sans-serif' font-weight='800' font-size='46' fill='white' text-anchor='middle'%3EEL%3C/text%3E%3C/svg%3E" />
+    <link rel="apple-touch-icon" href="img/Profile-pic.jpeg" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -102,12 +103,13 @@
   <body>
     <!-- Non-JavaScript Fallback for Web Scrapers, Bots & Accessibility -->
     <noscript>
-      <div style="background:#18181b;color:#f4f4f5;padding:2rem;margin:1rem;border-radius:8px;font-family:system-ui,sans-serif;line-height:1.6;">
-        <h1 style="margin-top:0;">Enmanuel Leon — Senior Fullstack Engineer</h1>
-        <p><strong>Ubicación / Location:</strong> Valencia, Venezuela (Remoto · CET / EST) | <strong>Ciudadanía:</strong> Italiana (UE), Venezolana</p>
-        <p><strong>Contacto / Contact:</strong> <a href="mailto:enma2310@outlook.com" style="color:#818cf8;">enma2310@outlook.com</a> | <a href="https://www.linkedin.com/in/enmanuel-leon-48b11714b/" style="color:#818cf8;">LinkedIn</a> | <a href="https://github.com/enmanuel23x" style="color:#818cf8;">GitHub</a></p>
+      <div style="max-width: 860px; margin: 2rem auto; padding: 2rem; background: #18181b; color: #f4f4f5; border-radius: 12px; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; border: 1px solid rgba(255,255,255,0.1);">
+        <h1 style="margin-top:0; color:#ffffff;">Enmanuel Leon — Senior Fullstack Engineer</h1>
+        <p><strong>Ubicación / Location:</strong> Valencia, Venezuela (Remoto · CET / EST) | <strong>Ciudadanía / Citizenship:</strong> Italiana (UE), Venezolana</p>
+        <p><strong>Contacto / Contact:</strong> <a href="mailto:enma2310@outlook.com" style="color:#818cf8;">enma2310@outlook.com</a> | <a href="https://www.linkedin.com/in/enmanuel-leon-48b11714b/" target="_blank" rel="noopener noreferrer" style="color:#818cf8;">LinkedIn</a> | <a href="https://github.com/enmanuel23x" target="_blank" rel="noopener noreferrer" style="color:#818cf8;">GitHub</a></p>
         <p>Ingeniero de Computación con más de 6 años de experiencia especializado en sistemas distribuidos, arquitecturas reactivas y cloud (AWS/GCP), procesando alto rendimiento transaccional con Node.js, TypeScript, Python, Fastify, Redis y BullMQ.</p>
-        <h2 style="font-size:1.25rem;">Formatos de CV descargables / Downloadable CV Formats:</h2>
+        
+        <h2 style="color:#a5b4fc; font-size:1.2rem; margin-top:1.5rem;">Descargar Currículum Vitae / Download Resume</h2>
         <ul>
           <li><a href="export/Enmanuel_Leon_CV_ES.pdf" style="color:#818cf8;">Descargar CV en PDF (Español)</a></li>
           <li><a href="export/Enmanuel_Leon_CV_EN.pdf" style="color:#818cf8;">Download Resume in PDF (English)</a></li>
@@ -115,6 +117,17 @@
           <li><a href="export/cv.en.md" style="color:#818cf8;">View Resume in Markdown (English)</a></li>
           <li><a href="llms.txt" style="color:#818cf8;">Índice estructurado para modelos de lenguaje (llms.txt)</a></li>
         </ul>
+
+        <h2 style="color:#a5b4fc; font-size:1.2rem; margin-top:1.5rem;">Experiencia Profesional / Work Experience</h2>
+        <ul>
+          <li><strong>Entropy Systems (Nov 2024 - Presente):</strong> Senior Fullstack Engineer. Arquitectura de pipelines asíncronos en Node.js, TypeScript, Redis, BullMQ y AWS SQS procesando 15,000+ ops/min (-38% latencia p95). Webhooks de pago idempotentes procesando $500K+ USD/mes.</li>
+          <li><strong>Entropy Systems (Feb 2024 - Nov 2024):</strong> Fullstack Engineer. Microservicios con Fastify, TypeScript y Prisma ORM (+30% throughput, -25% tiempo de respuesta). Agentes de automatización con OpenAI y Claude SDK (-12h/semana).</li>
+          <li><strong>V3ntas (May 2022 - Feb 2024):</strong> Fullstack Software Developer. Aplicaciones web y móviles con React, React Native y Node.js. Optimización de SQL y Redis (-35% carga en base de datos).</li>
+          <li><strong>Web Informática (Mar 2020 - May 2022):</strong> Frontend Developer. Interfaces SPA responsivas e interactivas en JavaScript y React.</li>
+        </ul>
+
+        <h2 style="color:#a5b4fc; font-size:1.2rem; margin-top:1.5rem;">Stack Tecnológico</h2>
+        <p>Node.js, TypeScript, Python, Fastify, Express, React, React Native, Redis, BullMQ, AWS (SQS, Lambda, ECS, S3, CloudFormation), GCP, PostgreSQL, MySQL, Prisma ORM, Docker Compose, CI/CD.</p>
       </div>
     </noscript>
 
@@ -197,7 +210,7 @@
         <div class="hero-avatar-col">
           <div class="hero-avatar-glow" aria-hidden="true"></div>
           <div class="hero-avatar">
-            <img id="heroAvatar" src="img/Profile-pic.jpeg" alt="Avatar" />
+            <img id="heroAvatar" src="img/Profile-pic.jpeg" alt="Enmanuel Leon — Senior Fullstack Engineer" width="400" height="400" fetchpriority="high" />
           </div>
         </div>
       </div>
@@ -399,23 +412,6 @@
         ✉️ <span id="mobileCtaContactText">Contactar</span>
       </a>
     </div>
-
-    <!-- Fallback for Crawlers and Users without JS -->
-    <noscript>
-      <div style="max-width: 800px; margin: 40px auto; padding: 24px; font-family: system-ui, sans-serif; background: #ffffff; color: #111827; border-radius: 8px;">
-        <h1>Enmanuel Leon — Senior Fullstack Engineer</h1>
-        <p>Ingeniero de Computación con más de 6 años de experiencia en sistemas distribuidos, microservicios, IA aplicada y arquitecturas Cloud (AWS/GCP).</p>
-        <h2>Contacto</h2>
-        <p>Email: <a href="mailto:enma2310@outlook.com">enma2310@outlook.com</a> | <a href="https://www.linkedin.com/in/enmanuel-leon-48b11714b/">LinkedIn</a> | <a href="https://github.com/enmanuel23x">GitHub</a></p>
-        <h2>Experiencia</h2>
-        <ul>
-          <li><strong>Entropy Systems (2024 - Presente):</strong> Fullstack Developer (AI & Core Systems). Motor distribuido de generación asíncrona de artefactos y reportes complejos en Fastify/Python, plataforma core de herramientas y agentes de IA con comunicación M2M y sincronización periódica entre VPCs aisladas.</li>
-          <li><strong>Sector Fintech - Freelance (2024 - 2025):</strong> Ingeniero de Software & Mobile. Solución financiera multiplataforma (iOS/Android) con React Native, TypeScript, infraestructura cloud y Row-Level Security (RLS).</li>
-          <li><strong>Interfell - ePayco (2021 - 2024):</strong> Fullstack Developer. Microservicios transaccionales en Node.js, TypeScript y MySQL con soporte a Lumen (PHP), integraciones de pasarela de pago para clientes corporativos y comercios con React, REST, GraphQL y SOAP.</li>
-          <li><strong>Intelix Synergy, C.A. (2020 - 2021):</strong> Analista de Sistemas / Desarrollador de Software. Sistemas empresariales internos con JavaScript, Node.js, Python, Linux y NGINX.</li>
-        </ul>
-      </div>
-    </noscript>
 
     <!-- External Logic -->
     <script src="assets/js/app.js" defer></script>
