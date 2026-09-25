@@ -27,13 +27,13 @@
   },
   "profile": {
     "name": "Enmanuel Leon",
-    "role": "Senior Fullstack Developer",
+    "role": "Senior Fullstack & Backend Engineer",
     "photo": "img/Profile-pic.jpeg"
   },
   "hero": {
     "badge": "Disponible para proyectos de alto impacto",
-    "summary": "Ingeniero de Computación especializado en construir productos robustos, escalables y orientados al negocio con JavaScript/TypeScript, Python y arquitecturas modernas.",
-    "typingLine": "Diseño sistemas de software confiables, de alto impacto y listos para crecer;",
+    "summary": "Ingeniero de Computación especializado en sistemas distribuidos, automatización con IA y plataformas transaccionales con TypeScript, Node.js, Python, AWS/GCP e integraciones de alta demanda.",
+    "typingLine": "Diseño arquitecturas distribuidas, motores de procesamiento y plataformas cloud;",
     "actions": [
       { "label": "Contactar", "href": "#contact" },
       { "label": "Ver experiencia", "href": "#experience" }
@@ -41,108 +41,119 @@
   },
   "about": {
     "label": "// Sobre mí",
-    "title": "Construyo software con foco en calidad, impacto y sostenibilidad",
+    "title": "Construyendo sistemas distribuidos, motores asíncronos y plataformas cloud de alta disponibilidad",
     "paragraphs": [
-      "Cuento con más de 6 años de experiencia desarrollando productos digitales para sectores como fintech, servicios empresariales y soluciones impulsadas por IA.",
-      "Mi enfoque combina visión técnica y criterio de producto: priorizo la escalabilidad, la mantenibilidad del código y una experiencia de usuario clara.",
-      "He colaborado con equipos multiculturales en entornos remotos, liderando decisiones técnicas y acompañando procesos de mejora continua."
+      "Cuento con más de 6 años de experiencia llevando software de misión crítica a producción en sectores como fintech, inteligencia artificial aplicada y plataformas empresariales.",
+      "Mi enfoque combina arquitectura técnica sólida y visión de negocio: diseño motores de procesamiento asíncrono a escala, plataformas core con comunicación M2M entre VPCs aisladas, y orquestación de servicios en la nube (AWS/GCP).",
+      "He colaborado en equipos de alta exigencia técnica en entornos remotos y como consultor independiente, liderando desde la toma de requerimientos e infraestructura con estrictas políticas de seguridad (RLS/Auth) hasta ecosistemas de APIs heterogéneas (REST, GraphQL, SOAP)."
     ],
     "stats": [
       { "value": 6, "label": "Años de experiencia" },
       { "value": 25, "label": "Proyectos relevantes" },
       { "value": 3, "label": "Sectores de impacto" },
-      { "value": 2, "label": "Idiomas profesionales" }
+      { "value": 2, "label": "Idiomas de trabajo" }
     ]
   },
   "experience": {
     "label": "// Experiencia",
     "title": "Trayectoria profesional",
-    "subtitle": "Roles en desarrollo fullstack, arquitectura y soluciones basadas en IA.",
+    "subtitle": "Roles en sistemas distribuidos, microservicios transaccionales, infraestructura Cloud y soluciones con IA.",
     "items": [
       {
         "id": "entropy",
         "period": "Abr. 2024 - Presente",
         "location": "Barcelona, España · Remoto",
         "role": "Fullstack Developer (AI & Core Systems)",
-        "company": "Entropy",
+        "company": "Entropy Systems",
         "bullets": [
-          "Diseñé e implementé flujos de trabajo inteligentes con agentes de IA, garantizando alta confiabilidad y trazabilidad.",
-          "Construí herramientas y paneles internos automatizados que optimizaron la eficiencia operativa del equipo en tareas diarias críticas.",
-          "Integré interfaces interactivas de alta velocidad con servicios y microservicios backend de baja latencia.",
-          "Lideré y aporté en decisiones de diseño y arquitectura para evolucionar y escalar el stack técnico de forma segura."
+          "Reduje el tiempo de procesamiento en un 65% en la emisión de reportes normativos complejos mediante el diseño e implementación de un servicio distribuido de generación asíncrona de artefactos y documentos en Fastify y Python, procesando más de 2.000 reportes mensuales con colas BullMQ y Redis.",
+          "Arquitecté la capa backend del core de distribución de herramientas de IA (agentes, flujos y componentes), implementando soporte multi-instancia de alta concurrencia y comunicación Machine-to-Machine (M2M) segura con latencias inferiores a 50ms mediante APIs desacopladas y autenticación basada en tokens.",
+          "Diseñé un motor de sincronización asíncrona periódica basado en crons distribuidos y tareas programadas en segundo plano que comunica de forma segura instancias de clientes en VPCs aisladas con la plataforma core, garantizando un 99.9% de consistencia de datos sin exponer endpoints a la red pública.",
+          "Operé microservicios distribuidos en AWS y GCP con 99.9% de disponibilidad, empaquetando componentes en contenedores Docker y configurando pipelines de CI/CD que redujeron los tiempos de despliegue de ~1 hora a ~10 minutos con observabilidad continua vía Sentry y CloudWatch."
         ],
-        "tags": ["TypeScript", "Node.js", "React", "React Native", "Python", "LLMs"]
+        "tags": ["TypeScript", "Fastify", "Python", "AWS / GCP", "Redis / BullMQ", "M2M / VPC", "Docker"]
+      },
+      {
+        "id": "fintech_mobile",
+        "period": "2024 - 2025",
+        "location": "Remoto",
+        "role": "Ingeniero de Software & Mobile (Freelance)",
+        "company": "Sector Fintech (NDA)",
+        "bullets": [
+          "Diseñé y construí de punta a punta una solución financiera multiplataforma (iOS y Android) en React Native y TypeScript, liderando la toma de requerimientos, la definición de arquitectura técnica y la integración con servicios cloud.",
+          "Estructuré la infraestructura de datos y políticas de seguridad, implementando autenticación robusta y control de acceso granular mediante Row-Level Security (RLS) para salvaguardar información transaccional sensible.",
+          "Optimicé el rendimiento y la resiliencia de la aplicación móvil, reduciendo los tiempos de carga en un 35% y garantizando la persistencia de estado para operaciones transaccionales en entornos de baja conectividad."
+        ],
+        "tags": ["React Native", "TypeScript", "Cloud Infra", "RLS", "Auth", "Fintech"]
       },
       {
         "id": "epayco",
         "period": "Jun. 2021 - Abr. 2024",
         "location": "Remoto",
-        "role": "Fullstack Developer (Semi Senior)",
+        "role": "Fullstack Developer",
         "company": "Interfell - ePayco",
         "bullets": [
-          "Diseñé, escalé y mantuve microservicios financieros robustos para flujos transaccionales seguros de alta demanda.",
-          "Desarrollé y optimizó módulos en React Native para SDKs de pagos móviles, garantizando compatibilidad multiplataforma.",
-          "Optimicé motores de procesamiento de pagos y orquesté integraciones avanzadas en entornos REST y SOAP.",
-          "Implementé controles automatizados de calidad de código y promoví buenas prácticas de revisión técnica entre pares.",
-          "Trabajé con contenedores Docker y entornos reproducibles para acelerar despliegues continuos y minimizar incidencias."
+          "Sostuve una disponibilidad del 99.9% en servicios transaccionales de pasarela de pago procesando más de 500.000 operaciones mensuales mediante el desarrollo y mantenimiento de microservicios en Node.js (Express) y TypeScript sobre MySQL, integrando y manteniendo servicios auxiliares en PHP (Lumen).",
+          "Lideré la integración técnica de la pasarela de pago para clientes corporativos y comercios, orquestando flujos transaccionales entre interfaces web responsivas en React y servicios de backend conectados a través de APIs REST, GraphQL y servicios legados SOAP.",
+          "Reduje la latencia de procesamiento de pagos en un 28% optimizando consultas críticas en MySQL, desacoplando tareas pesadas de validación y notificación mediante colas AWS SQS y refactorizando la orquestación de endpoints transaccionales.",
+          "Disminuí el tiempo medio de resolución de incidencias (MTTR) en un 40% estandarizando entornos reproducibles con Docker, implementando pruebas automatizadas con Jest y centralizando el monitoreo de anomalías en Datadog y Sentry."
         ],
-        "tags": ["React", "Node.js", "React Native", "Docker", "Microservicios"]
+        "tags": ["Node.js", "TypeScript", "React", "MySQL", "GraphQL / REST", "AWS SQS", "Docker"]
       },
       {
         "id": "intelix",
         "period": "Mar. 2020 - Jun. 2021",
         "location": "Valencia, Venezuela",
-        "role": "Analista de Sistemas",
+        "role": "Analista de Sistemas / Desarrollador de Software",
         "company": "Intelix Synergy, C.A.",
         "bullets": [
-          "Desarrollé soluciones empresariales para procesos de transformación digital.",
-          "Implementé arquitecturas modulares para facilitar mantenimiento y escalabilidad.",
-          "Acompañé la planificación técnica y el seguimiento de entregables clave.",
-          "Generé documentación técnica estructurada para soporte y continuidad de proyectos."
+          "Aumenté en un 30% la eficiencia operativa en la gestión de procesos comerciales desarrollando 3 aplicaciones modulares internas en JavaScript, Node.js y Python utilizadas diariamente por más de 200 colaboradores.",
+          "Garantizé alta disponibilidad (cero caídas no planificadas) administrando servidores de producción Linux con NGINX como reverse proxy, balanceo de carga y políticas de seguridad SSL/TLS.",
+          "Reduje los tiempos de onboarding de nuevos desarrolladores en un 50% elaborando documentación técnica estructurada bajo estándares OpenAPI/Swagger y diagramas de arquitectura de sistemas."
         ],
-        "tags": ["Análisis", "Arquitectura", "Documentación", "Gestión técnica"]
+        "tags": ["JavaScript", "Node.js", "Python", "NGINX", "Linux", "OpenAPI"]
       }
     ]
   },
   "skills": {
     "label": "// Skills",
     "title": "Stack y capacidades",
-    "desc": "Herramientas y tecnologías con las que trabajo día a día",
+    "desc": "Tecnologías, arquitectura y herramientas que utilizo en producción",
     "categories": [
       {
-        "title": "Backend & APIs",
+        "title": "Backend & Arquitectura",
         "items": [
-          { "name": "Node.js", "level": 92 },
-          { "name": "Express / Fastify", "level": 88 },
-          { "name": "Python", "level": 82 },
-          { "name": "REST / SOAP", "level": 90 }
+          { "name": "Node.js (Fastify / Express)", "level": 92 },
+          { "name": "TypeScript & Python", "level": 90 },
+          { "name": "REST / GraphQL / SOAP APIs", "level": 88 },
+          { "name": "Arquitectura Orientada a Eventos & M2M", "level": 88 }
         ]
       },
       {
-        "title": "Frontend",
+        "title": "Cloud, Redes & DevOps",
         "items": [
-          { "name": "React / Next.js / React Native", "level": 85 },
-          { "name": "JavaScript / TypeScript", "level": 90 },
-          { "name": "HTML / CSS", "level": 88 },
-          { "name": "UX orientada a producto", "level": 80 }
+          { "name": "Multi-Cloud (AWS · GCP)", "level": 88 },
+          { "name": "Docker & CI/CD Pipelines", "level": 86 },
+          { "name": "Aislamiento VPC & Networking", "level": 84 },
+          { "name": "Linux & NGINX", "level": 85 }
         ]
       },
       {
-        "title": "Data & Infraestructura",
+        "title": "Datos & Mensajería",
         "items": [
-          { "name": "PostgreSQL", "level": 84 },
-          { "name": "MongoDB", "level": 82 },
-          { "name": "Docker", "level": 79 },
-          { "name": "CI/CD", "level": 75 }
+          { "name": "MySQL & PostgreSQL", "level": 88 },
+          { "name": "Redis / BullMQ / AWS SQS", "level": 88 },
+          { "name": "Row-Level Security (RLS) & Auth", "level": 85 },
+          { "name": "MongoDB", "level": 82 }
         ]
       },
       {
-        "title": "IA aplicada",
+        "title": "IA Aplicada, Frontend & Mobile",
         "items": [
-          { "name": "Integración de LLMs", "level": 84 },
-          { "name": "Diseño de prompts", "level": 80 },
-          { "name": "Automatización de flujos", "level": 83 },
-          { "name": "Herramientas internas", "level": 86 }
+          { "name": "Generación Asíncrona de Artefactos", "level": 90 },
+          { "name": "Integración de LLMs & Agentes", "level": 86 },
+          { "name": "React / Next.js / Vite", "level": 88 },
+          { "name": "React Native (Multiplataforma)", "level": 85 }
         ]
       }
     ]
@@ -155,39 +166,39 @@
         "period": "2017 - 2020",
         "degree": "Ingeniería de Computación",
         "school": "Universidad José Antonio Páez",
-        "description": "Formación en fundamentos de ingeniería de software, algoritmos, estructuras de datos y gestión de proyectos tecnológicos."
+        "description": "Formación en fundamentos de ingeniería de software, sistemas distribuidos, algoritmos y gestión de proyectos tecnológicos."
       }
     ]
   },
   "projects": {
     "label": "// Proyectos destacados",
     "title": "Trabajo seleccionado",
-    "subtitle": "Proyectos y productos en los que he participado con foco en rendimiento y negocio.",
+    "subtitle": "Sistemas, motores de procesamiento y plataformas que he diseñado e implementado.",
     "items": [
       {
-        "title": "Nexus Pay SDK",
-        "type": "FinTech SDK / React Native",
-        "description": "SDK de procesamiento de pagos móviles de alto rendimiento para Android e iOS, integrando tokens seguros y transacciones optimizadas en baja latencia.",
-        "tech": ["React Native", "TypeScript", "Node.js", "Docker"],
-        "icon": "💳",
+        "title": "Artifact Generation Engine",
+        "type": "Sistemas Distribuidos / Fastify & Python",
+        "description": "Motor distribuido de generación escalable de artefactos y reportes normativos que redujo los tiempos en un 65% procesando más de 2.000 documentos mensuales vía BullMQ y Redis.",
+        "tech": ["Fastify", "Python", "Redis", "BullMQ", "Docker", "AWS S3"],
+        "icon": "📄",
         "demo": "#",
         "github": "#"
       },
       {
-        "title": "Athena AI Operations",
-        "type": "Sistemas Inteligentes / Python & Node.js",
-        "description": "Plataforma de automatización de operaciones empresariales usando flujos de trabajo inteligentes con agentes de IA autónomos y trazabilidad distribuida.",
-        "tech": ["Node.js", "Python", "React", "LLMs", "Fastify"],
+        "title": "Core AI Tooling Platform",
+        "type": "Infraestructura & M2M / TypeScript & Node.js",
+        "description": "Plataforma multi-instancia para distribución de herramientas y agentes con comunicación M2M (<50ms) y sincronización asíncrona periódica con entornos en VPCs aisladas.",
+        "tech": ["TypeScript", "Node.js", "Fastify", "VPC Networking", "Crons / Workers"],
         "icon": "🤖",
         "demo": "#",
         "github": "#"
       },
       {
-        "title": "Quantum Billing Core",
-        "type": "Arquitectura Microservicios / Express & PostgreSQL",
-        "description": "Motor de facturación transaccional escalable capaz de procesar de forma segura flujos recurrentes masivos, logrando reducir la latencia de respuesta en un 35%.",
-        "tech": ["Node.js", "Express", "PostgreSQL", "Docker", "CI/CD"],
-        "icon": "⚙️",
+        "title": "Fintech Cross-Platform Mobile Suite",
+        "type": "FinTech Mobile / React Native & Cloud",
+        "description": "Solución financiera móvil multiplataforma desarrollada de punta a punta con arquitectura cloud escalable, persistencia offline y políticas estrictas de Row-Level Security (RLS).",
+        "tech": ["React Native", "TypeScript", "Cloud Infra", "RLS", "Auth"],
+        "icon": "💳",
         "demo": "#",
         "github": "#"
       }
@@ -196,7 +207,7 @@
   "contact": {
     "label": "// Contacto",
     "title": "Hablemos",
-    "subtitle": "Abierto a oportunidades donde la tecnología y el negocio avancen juntos.",
+    "subtitle": "Abierto a oportunidades donde la ingeniería de sistemas, la robustez técnica y el negocio avancen juntos.",
     "items": [
       {
         "label": "Email",

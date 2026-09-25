@@ -753,7 +753,7 @@ function initTerminal() {
         skillsStr += `${items}\n\n`;
       });
     } else {
-      skillsStr += "JavaScript, TypeScript, Node.js, React, Python, LLMs\n";
+      skillsStr += "JavaScript, TypeScript, Node.js, React, Python, AWS, GCP, Redis, LLMs\n";
     }
 
     let expStr = "--- EXPERIENCE TIMELINE ---\n";
