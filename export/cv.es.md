@@ -31,7 +31,7 @@ Ingeniero de Computación con más de 6 años de experiencia en desarrollo de so
 *Abril 2024 - Presente*
 
 - **Reduje el tiempo de procesamiento en un 65%** en la emisión de reportes normativos complejos mediante el diseño e implementación de un servicio distribuido de generación asíncrona de artefactos y documentos en Fastify y Python, procesando más de 2.000 reportes mensuales con colas BullMQ y Redis.
-- **Arquitecté la capa backend del core de distribución de herramientas de IA** (agentes, flujos y componentes), implementando soporte multi-instancia de alta concurrencia y comunicación Machine-to-Machine (M2M) segura con latencias inferiores a 50ms mediante APIs desacopladas y autenticación basada en tokens.
+- **Diseñé la arquitectura backend del core de distribución de herramientas de IA** (agentes, flujos y componentes), implementando soporte multi-instancia de alta concurrencia y comunicación Machine-to-Machine (M2M) segura con latencias inferiores a 50ms mediante APIs desacopladas y autenticación basada en tokens.
 - **Diseñé un motor de sincronización asíncrona periódica** basado en crons distribuidos y tareas programadas en segundo plano que comunica de forma segura instancias de clientes en VPCs aisladas con la plataforma core, garantizando un 99.9% de consistencia de datos sin exponer endpoints a la red pública.
 - **Lideré la definición de estándares de ingeniería** y adopción de especificaciones técnicas (RFCs/ADRs), reduciendo la deuda técnica y acelerando la integración de nuevos microservicios entre pares de desarrollo.
 - **Operé microservicios distribuidos en AWS y GCP con 99.9% de disponibilidad**, empaquetando componentes en contenedores Docker y configurando pipelines de CI/CD que redujeron los tiempos de despliegue de ~1 hora a ~10 minutos con observabilidad continua vía Sentry y CloudWatch.
@@ -56,7 +56,7 @@ Ingeniero de Computación con más de 6 años de experiencia en desarrollo de so
 *Marzo 2020 - Junio 2021*
 
 - **Aumenté en un 30% la eficiencia operativa** en la gestión de procesos comerciales desarrollando 3 aplicaciones modulares internas en JavaScript, Node.js y Python utilizadas diariamente por más de 200 colaboradores.
-- **Garantizé alta disponibilidad (cero caídas no planificadas)** administrando servidores de producción Linux con NGINX como reverse proxy, balanceo de carga y políticas de seguridad SSL/TLS.
+- **Garanticé alta disponibilidad (cero caídas no planificadas)** administrando servidores de producción Linux con NGINX como reverse proxy, balanceo de carga y políticas de seguridad SSL/TLS.
 - **Reduje los tiempos de onboarding de nuevos desarrolladores en un 50%** elaborando documentación técnica estructurada bajo estándares OpenAPI/Swagger y diagramas de arquitectura de sistemas.
 
 ---
