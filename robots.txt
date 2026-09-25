@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+Allow: /export/
+Allow: /data/
+Allow: /img/
+Allow: /llms.txt
+Allow: /sitemap.xml
+
+# AI & LLM Search Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://enmanuel23x.github.io/sitemap.xml

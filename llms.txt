@@ -1,0 +1,35 @@
+# Enmanuel Leon — Senior Fullstack Engineer
+
+> Computer Engineer with 6+ years of experience specializing in high-throughput distributed systems, event-driven architectures, applied AI, and fintech cloud solutions (AWS/GCP). Dual Italian (EU) & Venezuelan citizenship.
+
+## Contact & Profiles
+- Location: Valencia, Venezuela (Remote · CET / EST compatible)
+- Citizenship: Italian (EU) & Venezuelan
+- Email: enma2310@outlook.com
+- GitHub: https://github.com/enmanuel23x
+- LinkedIn: https://www.linkedin.com/in/enmanuel-leon-48b11714b/
+- Portfolio: https://enmanuel23x.github.io/
+
+## Available CV Formats
+- [CV English (PDF)](https://enmanuel23x.github.io/export/Enmanuel_Leon_CV_EN.pdf): ATS-optimized 2-page curriculum vitae in English.
+- [CV Spanish (PDF)](https://enmanuel23x.github.io/export/Enmanuel_Leon_CV_ES.pdf): ATS-optimized 2-page curriculum vitae in Spanish.
+- [CV English (Markdown)](https://enmanuel23x.github.io/export/cv.en.md): Raw markdown resume in English.
+- [CV Spanish (Markdown)](https://enmanuel23x.github.io/export/cv.es.md): Raw markdown resume in Spanish.
+
+## Technical Stack
+- **Backend & Core:** Node.js, TypeScript, Python, Fastify, Express, REST APIs, GraphQL, Microservices, Event-Driven Architecture, Distributed Systems.
+- **Data & In-Memory:** PostgreSQL, MySQL, Redis (Caching, Streams, Distributed Locks), Prisma ORM, TypeBox, Zod.
+- **Asynchronous & Queues:** BullMQ, AWS SQS, Idempotency patterns, Dead Letter Queues (DLQ), Circuit Breakers.
+- **Cloud & DevOps:** AWS (ECS, Lambda, SQS, S3, CloudFront, CloudFormation), Google Cloud Platform (GCP), Docker Compose, CI/CD (GitHub Actions), Linux.
+- **Frontend & Mobile:** React, React Native, Vite, Tailwind CSS, Next.js basics, State Management, Responsive Web Design.
+- **AI & Integrations:** OpenAI API, Claude API, Anthropic SDK, Automated Prompt Pipelines, Webhook architectures, Payment Gateways (Stripe, Mercado Pago).
+
+## Professional Experience Summary
+- **Senior Fullstack Engineer** at Entropy Systems (Nov 2024 - Present):
+  Architected asynchronous processing pipelines using Node.js, TypeScript, Redis, BullMQ and AWS SQS, handling 15,000+ operations/min and decreasing p95 latency by 38%. Designed idempotent payment webhook workflows processing $500K+ monthly.
+- **Fullstack Engineer** at Entropy Systems (Feb 2024 - Nov 2024):
+  Implemented microservices with Fastify, TypeScript, and Prisma ORM, reducing response times by 25%. Built AI-assisted automation agents with OpenAI API and Claude SDK saving 12+ team hours/week.
+- **Fullstack Software Developer** at V3ntas (May 2022 - Feb 2024):
+  Developed cross-platform mobile and web applications with React, React Native, and Node.js. Optimized SQL queries and Redis caches reducing database load by 35%.
+- **Frontend Developer** at Web Informática (Mar 2020 - May 2022):
+  Built responsive web applications, improved core web vitals and client interaction workflows.
