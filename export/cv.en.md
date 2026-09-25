@@ -1,8 +1,10 @@
 # Enmanuel Leon
 
-**Senior Fullstack & Backend Engineer | AI Tooling · Distributed Systems · Cloud (AWS/GCP)**
+**Senior Fullstack Engineer | Distributed Systems & Cloud**
 
-Email: [enma2310@outlook.com](mailto:enma2310@outlook.com) | LinkedIn: [linkedin.com/in/enmanuel-leon-48b11714b](https://www.linkedin.com/in/enmanuel-leon-48b11714b/) | GitHub: [github.com/enmanuel23x](https://github.com/enmanuel23x) | Web: [enmanuel23x.github.io](https://enmanuel23x.github.io)
+Valencia, Venezuela (Remote · CET / EST Timezones) | Citizenship: Italian (EU), Venezuelan  
+Email: [enma2310@outlook.com](mailto:enma2310@outlook.com) | LinkedIn: [linkedin.com/in/enmanuel-leon-48b11714b](https://www.linkedin.com/in/enmanuel-leon-48b11714b/) | GitHub: [github.com/enmanuel23x](https://github.com/enmanuel23x) | Web: [enmanuel23x.github.io](https://enmanuel23x.github.io)  
+Languages: Spanish (Native), English (Technical & Professional Working / B1)
 
 ---
 
@@ -33,10 +35,10 @@ Computer Engineer with 6+ years of experience in mission-critical software engin
 - **Designed a periodic asynchronous synchronization engine** using distributed crons and background workers that securely interconnects isolated customer VPC environments with the central core platform, maintaining 99.9% data consistency without exposing public endpoints.
 - **Operated distributed microservices across AWS and GCP with 99.9% uptime**, containerizing services in Docker and implementing CI/CD pipelines that reduced deployment times from ~1 hour to ~10 minutes, backed by real-time observability in Sentry and CloudWatch.
 
-### Software & Mobile Engineer (Freelance Consulting) | Fintech Sector (NDA)
+### Software & Mobile Engineer (Independent Consultant / Part-time Contractor) | Fintech Scale-up (B2C Wallet · NDA)
 *2024 - 2025*
 
-- **Engineered an end-to-end cross-platform financial mobile solution** (iOS and Android) using React Native and TypeScript, spearheading technical requirements definition, system architecture, and cloud service integrations.
+- **Engineered the end-to-end cross-platform mobile architecture** (iOS and Android) using React Native and TypeScript for a B2C fintech product serving over 15,000 active users, defining technical specifications and cloud integrations.
 - **Architected scalable cloud data infrastructure and security controls**, implementing robust authentication flows and fine-grained Row-Level Security (RLS) policies to protect sensitive transactional records.
 - **Optimized mobile application performance and network resilience**, reducing load times by 35% and securing reliable offline state persistence for transactional operations in low-connectivity environments.
 
@@ -59,14 +61,14 @@ Computer Engineer with 6+ years of experience in mission-critical software engin
 
 ## Education
 
-### Bachelor of Science in Computer Engineering
+### Bachelor of Science in Computer Engineering (5-year Degree Equivalent / 10 Semesters)
 **Universidad José Antonio Páez** | Valencia, Venezuela  
-*2017 - 2020*
+*2017 - 2020*  
+*Accelerated continuous 10-semester curriculum. Core studies in distributed systems, relational databases, software engineering, and computer architecture.*
 
 ---
 
 ## Additional Information
 
-- **Languages:** Spanish (Native), English (Technical / Conversational B1 - Fluent technical documentation, tickets, architectural design docs, and async written collaboration in distributed teams).
 - **Areas of Specialization:** Distributed Systems Architecture, Multi-Cloud (AWS · GCP), Applied AI Automation, Payment Gateways & Fintech Integrations.
 - **Portfolio & Code:** [enmanuel23x.github.io](https://enmanuel23x.github.io) | [github.com/enmanuel23x](https://github.com/enmanuel23x)

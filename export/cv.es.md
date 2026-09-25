@@ -1,8 +1,10 @@
 # Enmanuel Leon
 
-**Senior Fullstack & Backend Engineer | AI Tooling · Sistemas Distribuidos · Cloud (AWS/GCP)**
+**Senior Fullstack Engineer | Distributed Systems & Cloud**
 
-Email: [enma2310@outlook.com](mailto:enma2310@outlook.com) | LinkedIn: [linkedin.com/in/enmanuel-leon-48b11714b](https://www.linkedin.com/in/enmanuel-leon-48b11714b/) | GitHub: [github.com/enmanuel23x](https://github.com/enmanuel23x) | Web: [enmanuel23x.github.io](https://enmanuel23x.github.io)
+Valencia, Venezuela (Remoto · Horario CET / EST) | Ciudadanía: Italiana (UE), Venezolana  
+Email: [enma2310@outlook.com](mailto:enma2310@outlook.com) | LinkedIn: [linkedin.com/in/enmanuel-leon-48b11714b](https://www.linkedin.com/in/enmanuel-leon-48b11714b/) | GitHub: [github.com/enmanuel23x](https://github.com/enmanuel23x) | Web: [enmanuel23x.github.io](https://enmanuel23x.github.io)  
+Idiomas: Español (Nativo), Inglés (Nivel Técnico Profesional / B1 Asíncrono)
 
 ---
 
@@ -33,11 +35,11 @@ Ingeniero de Computación con más de 6 años de experiencia en desarrollo de so
 - **Diseñé un motor de sincronización asíncrona periódica** basado en crons distribuidos y tareas programadas en segundo plano que comunica de forma segura instancias de clientes en VPCs aisladas con la plataforma core, garantizando un 99.9% de consistencia de datos sin exponer endpoints a la red pública.
 - **Operé microservicios distribuidos en AWS y GCP con 99.9% de disponibilidad**, empaquetando componentes en contenedores Docker y configurando pipelines de CI/CD que redujeron los tiempos de despliegue de ~1 hora a ~10 minutos con observabilidad continua vía Sentry y CloudWatch.
 
-### Ingeniero de Software & Mobile (Consultoría Freelance) | Sector Fintech (NDA)
+### Ingeniero de Software & Mobile (Consultor Externo / Part-time Contractor) | Fintech Scale-up (Billetera B2C · NDA)
 *2024 - 2025*
 
-- **Diseñé y construí de punta a punta una solución financiera multiplataforma** (iOS y Android) en React Native y TypeScript, liderando la toma de requerimientos, la definición de arquitectura técnica y la integración con servicios cloud.
-- **Estructuré la infraestructura de datos y políticas de seguridad**, implementando autenticación robusta y control de acceso granular mediante Row-Level Security (RLS) para salvaguardar información transaccional sensible.
+- **Diseñé y construí de punta a punta la arquitectura móvil multiplataforma** (iOS y Android) en React Native y TypeScript para una solución fintech B2C con más de 15.000 usuarios activos, definiendo requerimientos técnicos e integrando servicios cloud.
+- **Estructuré la infraestructura de datos y políticas de seguridad cloud**, implementando autenticación robusta y control de acceso granular mediante Row-Level Security (RLS) para proteger registros transaccionales sensibles.
 - **Optimicé el rendimiento y la resiliencia de la aplicación móvil**, reduciendo los tiempos de carga en un 35% y garantizando la persistencia de estado para operaciones transaccionales en entornos de baja conectividad.
 
 ### Fullstack Developer | Interfell - ePayco | Remoto
@@ -59,14 +61,14 @@ Ingeniero de Computación con más de 6 años de experiencia en desarrollo de so
 
 ## Formación Académica
 
-### Ingeniería de Computación
+### Ingeniería de Computación (Grado Universitario de 5 años equivalente / 10 Semestres)
 **Universidad José Antonio Páez** | Valencia, Venezuela  
-*2017 - 2020*
+*2017 - 2020*  
+*Pensum intensivo continuo de 10 semestres. Formación en sistemas distribuidos, bases de datos relacionales, ingeniería de software y arquitectura computacional.*
 
 ---
 
 ## Información Adicional
 
-- **Idiomas:** Español (Nativo), Inglés (Nivel Técnico Profesional / Conversacional B1 - Fluidez para documentación técnica, tickets, arquitectura y trabajo asíncrono en equipos distribuidos).
 - **Áreas de Especialización:** Arquitectura de Sistemas Distribuidos, Multi-Cloud (AWS · GCP), Automatización con IA, Pasarelas de Pago e Integraciones Fintech.
 - **Portfolio & Código:** [enmanuel23x.github.io](https://enmanuel23x.github.io) | [github.com/enmanuel23x](https://github.com/enmanuel23x)

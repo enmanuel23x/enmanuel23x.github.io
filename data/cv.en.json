@@ -5,8 +5,7 @@
       { "id": "hero", "label": "Home" },
       { "id": "about", "label": "Profile" },
       { "id": "experience", "label": "Experience" },
-      { "id": "skills", "label": "Skills" },
-      { "id": "projects", "label": "Projects" },
+      { "id": "skills", "label": "Stack" },
       { "id": "education", "label": "Education" },
       { "id": "contact", "label": "Contact" }
     ]
@@ -30,7 +29,7 @@
   },
   "profile": {
     "name": "Enmanuel Leon",
-    "role": "Senior Fullstack & Backend Engineer",
+    "role": "Senior Fullstack Engineer",
     "photo": "img/Profile-pic.jpeg"
   },
   "hero": {
@@ -48,7 +47,7 @@
     "paragraphs": [
       "I have more than six years of experience delivering mission-critical production software for fintech, applied AI, and enterprise platforms.",
       "My approach balances sound technical architecture and business delivery: I build scalable asynchronous processing engines, core service platforms with M2M communication across isolated VPCs, and cloud-native services on AWS/GCP.",
-      "I have collaborated with high-performing remote engineering teams and worked as an independent consultant, leading from initial requirements gathering and secure cloud infrastructure (RLS/Auth) to heterogeneous API ecosystems (REST, GraphQL, SOAP)."
+      "Based in Valencia, Venezuela, I work 100% remotely with full availability for CET (Europe) and EST (Americas) hours. I hold dual citizenship: Italian (EU) and Venezuelan."
     ],
     "stats": [
       { "value": 6, "label": "Years of experience" },
@@ -80,10 +79,10 @@
         "id": "fintech_mobile",
         "period": "2024 - 2025",
         "location": "Remote",
-        "role": "Software & Mobile Engineer (Freelance)",
-        "company": "Fintech Sector (NDA)",
+        "role": "Software & Mobile Engineer (Independent Consultant / Part-time Contractor)",
+        "company": "Fintech Scale-up (B2C Wallet · NDA)",
         "bullets": [
-          "Engineered an end-to-end cross-platform financial mobile solution (iOS and Android) using React Native and TypeScript, spearheading technical requirements definition, system architecture, and cloud service integrations.",
+          "Engineered the end-to-end cross-platform mobile architecture (iOS and Android) using React Native and TypeScript for a B2C fintech product serving over 15,000 active users, defining technical specifications and cloud integrations.",
           "Architected scalable cloud data infrastructure and security controls, implementing robust authentication flows and fine-grained Row-Level Security (RLS) policies to protect sensitive transactional records.",
           "Optimized mobile application performance and network resilience, reducing load times by 35% and securing reliable offline state persistence for transactional operations in low-connectivity environments."
         ],
@@ -238,9 +237,9 @@
     "items": [
       {
         "period": "2017 - 2020",
-        "degree": "Computer Engineering",
+        "degree": "Bachelor of Science in Computer Engineering (5-year Degree Equivalent / 10 Semesters)",
         "school": "Universidad José Antonio Páez",
-        "description": "Training in software engineering fundamentals, distributed systems, algorithms, and technology project management."
+        "description": "Full 5-year equivalent engineering degree completed via accelerated 10-semester continuous track. Core curriculum in distributed systems, relational databases, software engineering, and computer architecture."
       }
     ]
   },
