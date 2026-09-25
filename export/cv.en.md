@@ -30,34 +30,34 @@ Computer Engineer with 6+ years of experience in mission-critical software engin
 ### Fullstack Developer (AI & Core Systems) | Entropy Systems | Barcelona, Spain (Remote)
 *April 2024 - Present*
 
-- **Reduced report generation processing time by 65%** by designing and deploying a distributed asynchronous document and artifact generation engine using Fastify and Python, processing over 2,000 complex audit reports monthly via BullMQ and Redis queues.
-- **Architected the backend layer of the core AI tooling platform** (agents, workflows, and skills), delivering high-concurrency multi-instance horizontal scaling and low-latency (<50ms) Machine-to-Machine (M2M) communication via decoupled APIs and token-based authentication.
-- **Designed a periodic asynchronous synchronization engine** using distributed crons and background workers that securely interconnects isolated customer VPC environments with the central core platform, maintaining 99.9% data consistency without exposing public endpoints.
+- **Significantly reduced processing time** for complex regulatory reports by designing and deploying a distributed asynchronous document and artifact generation engine using Fastify and Python, orchestrated with BullMQ and Redis queues.
+- **Architected the backend layer of the core AI tooling platform** (agents, workflows, and skills), delivering high-concurrency multi-instance scaling and low-latency Machine-to-Machine (M2M) communication via decoupled APIs and token-based authentication.
+- **Designed a periodic asynchronous synchronization engine** using distributed crons and background workers that securely interconnects isolated customer VPC environments with the central core platform, ensuring data consistency without exposing public endpoints.
 - **Steered engineering standards and architectural decision records** (RFCs/ADRs), cutting technical debt and accelerating cross-service integration across engineering peers.
-- **Operated distributed microservices across AWS and GCP with 99.9% uptime**, containerizing services in Docker and implementing CI/CD pipelines that reduced deployment times from ~1 hour to ~10 minutes, backed by real-time observability in Sentry and CloudWatch.
+- **Operated distributed microservices across AWS and GCP with high availability**, containerizing services in Docker and implementing CI/CD pipelines for automated continuous deployments backed by real-time observability in Sentry and CloudWatch.
 
 ### Software & Mobile Engineer (Independent Consultant / Part-time Contractor) | Fintech Scale-up (B2C Wallet · NDA)
-*2024 - 2025*
+*July 2025 - July 2026*
 
-- **Engineered the end-to-end cross-platform mobile architecture** (iOS and Android) using React Native and TypeScript for a B2C fintech product serving over 15,000 active users, defining technical specifications and cloud integrations.
+- **Engineered the end-to-end cross-platform mobile architecture** (iOS and Android) using React Native and TypeScript for a high-growth B2C fintech product, defining technical specifications and cloud integrations.
 - **Architected scalable cloud data infrastructure and security controls**, implementing robust authentication flows and fine-grained Row-Level Security (RLS) policies to protect sensitive transactional records.
-- **Optimized mobile application performance and network resilience**, reducing load times by 35% and securing reliable offline state persistence for transactional operations in low-connectivity environments.
+- **Optimized mobile application performance and network resilience**, streamlining startup load times and securing reliable offline state persistence for transactional operations in low-connectivity environments.
 
 ### Fullstack Developer | Interfell - ePayco | Remote
 *June 2021 - April 2024*
 
-- **Maintained 99.9% service uptime** across financial payment gateway services processing over 500,000 monthly transactions by engineering and maintaining transactional microservices in Node.js (Express) and TypeScript on MySQL, while integrating and supporting auxiliary services in PHP (Lumen).
+- **Maintained high availability across critical payment gateway services** for merchants and corporate partners by engineering and maintaining transactional microservices in Node.js (Express) and TypeScript on MySQL, while integrating auxiliary services in PHP (Lumen).
 - **Engineered resilience and idempotency controls** for critical financial transactions, implementing Circuit Breakers, Rate Limiting, and exponential backoff retries to guarantee zero duplicate charges and isolate external banking failures.
 - **Led technical payment gateway integrations** for corporate merchants and partners, orchestrating transaction lifecycles between responsive React web applications and backend services connected across REST, GraphQL, and legacy SOAP APIs.
-- **Reduced payment processing latency by 28%** by optimizing critical MySQL queries, offloading asynchronous background tasks with AWS SQS queues, and refactoring transactional API orchestration layers.
-- **Decreased Mean Time to Resolution (MTTR) by 40%** by establishing reproducible Docker environments, comprehensive automated testing suites in Jest, and proactive anomaly monitoring via Datadog and Sentry.
+- **Significantly reduced transaction processing latency** by optimizing complex MySQL queries, offloading asynchronous background tasks with AWS SQS queues, and refactoring critical API endpoint handlers.
+- **Accelerated production issue resolution and improved system reliability** by establishing reproducible Docker environments, comprehensive automated testing suites in Jest, and proactive anomaly monitoring via Datadog and Sentry.
 
 ### Systems Analyst / Software Developer | Intelix Synergy, C.A. | Valencia, Venezuela
 *March 2020 - June 2021*
 
-- **Boosted business process efficiency by 30%** by delivering 3 modular internal management systems in JavaScript, Node.js, and Python used daily by over 200 active employees.
-- **Ensured continuous zero-unplanned-downtime availability** by administering production Linux servers configured with NGINX reverse proxies, load balancing, and SSL/TLS security policies.
-- **Decreased developer onboarding time by 50%** by authoring comprehensive OpenAPI/Swagger specifications, interactive endpoint documentation, and modular architecture blueprints.
+- **Boosted business process efficiency** by delivering 3 modular internal management systems in JavaScript, Node.js, and Python used daily across business operations.
+- **Ensured continuous high availability (zero unplanned downtime)** by administering production Linux servers configured with NGINX reverse proxies, load balancing, and SSL/TLS security policies.
+- **Decreased developer onboarding time** by authoring comprehensive OpenAPI/Swagger specifications, interactive endpoint documentation, and modular architecture blueprints.
 
 ---
 

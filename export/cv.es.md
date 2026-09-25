@@ -30,34 +30,34 @@ Ingeniero de Computación con más de 6 años de experiencia en desarrollo de so
 ### Fullstack Developer (AI & Core Systems) | Entropy Systems | Barcelona, España (Remoto)
 *Abril 2024 - Presente*
 
-- **Reduje el tiempo de procesamiento en un 65%** en la emisión de reportes normativos complejos mediante el diseño e implementación de un servicio distribuido de generación asíncrona de artefactos y documentos en Fastify y Python, procesando más de 2.000 reportes mensuales con colas BullMQ y Redis.
-- **Diseñé la arquitectura backend del core de distribución de herramientas de IA** (agentes, flujos y componentes), implementando soporte multi-instancia de alta concurrencia y comunicación Machine-to-Machine (M2M) segura con latencias inferiores a 50ms mediante APIs desacopladas y autenticación basada en tokens.
-- **Diseñé un motor de sincronización asíncrona periódica** basado en crons distribuidos y tareas programadas en segundo plano que comunica de forma segura instancias de clientes en VPCs aisladas con la plataforma core, garantizando un 99.9% de consistencia de datos sin exponer endpoints a la red pública.
+- **Reduje sustancialmente los tiempos de procesamiento** en la emisión de reportes normativos complejos mediante el diseño e implementación de un servicio distribuido de generación asíncrona de artefactos y documentos en Fastify y Python, orquestado con colas BullMQ y Redis.
+- **Diseñé la arquitectura backend del core de distribución de herramientas de IA** (agentes, flujos y componentes), implementando soporte multi-instancia de alta concurrencia y comunicación Machine-to-Machine (M2M) segura de baja latencia mediante APIs desacopladas y autenticación basada en tokens.
+- **Diseñé un motor de sincronización asíncrona periódica** basado en crons distribuidos y tareas programadas en segundo plano que comunica de forma segura instancias de clientes en VPCs aisladas con la plataforma core, garantizando consistencia de datos sin exponer endpoints a la red pública.
 - **Lideré la definición de estándares de ingeniería** y adopción de especificaciones técnicas (RFCs/ADRs), reduciendo la deuda técnica y acelerando la integración de nuevos microservicios entre pares de desarrollo.
-- **Operé microservicios distribuidos en AWS y GCP con 99.9% de disponibilidad**, empaquetando componentes en contenedores Docker y configurando pipelines de CI/CD que redujeron los tiempos de despliegue de ~1 hora a ~10 minutos con observabilidad continua vía Sentry y CloudWatch.
+- **Operé microservicios distribuidos en AWS y GCP con alta disponibilidad**, empaquetando componentes en contenedores Docker y configurando pipelines de CI/CD para despliegues continuos con observabilidad vía Sentry y CloudWatch.
 
 ### Ingeniero de Software & Mobile (Consultor Externo / Part-time Contractor) | Fintech Scale-up (Billetera B2C · NDA)
-*2024 - 2025*
+*Julio 2025 - Julio 2026*
 
-- **Diseñé y construí de punta a punta la arquitectura móvil multiplataforma** (iOS y Android) en React Native y TypeScript para una solución fintech B2C con más de 15.000 usuarios activos, definiendo requerimientos técnicos e integrando servicios cloud.
+- **Diseñé y construí de punta a punta la arquitectura móvil multiplataforma** (iOS y Android) en React Native y TypeScript para una solución fintech B2C orientada a alto volumen de usuarios activos, definiendo requerimientos técnicos e integrando servicios cloud.
 - **Estructuré la infraestructura de datos y políticas de seguridad cloud**, implementando autenticación robusta y control de acceso granular mediante Row-Level Security (RLS) para proteger registros transaccionales sensibles.
-- **Optimicé el rendimiento y la resiliencia de la aplicación móvil**, reduciendo los tiempos de carga en un 35% y garantizando la persistencia de estado para operaciones transaccionales en entornos de baja conectividad.
+- **Optimicé el rendimiento y la resiliencia de la aplicación móvil**, agilizando los tiempos de carga y garantizando la persistencia de estado para operaciones transaccionales en entornos de baja conectividad.
 
 ### Fullstack Developer | Interfell - ePayco | Remoto
 *Junio 2021 - Abril 2024*
 
-- **Sostuve una disponibilidad del 99.9%** en servicios transaccionales de pasarela de pago procesando más de 500.000 operaciones mensuales mediante el desarrollo y mantenimiento de microservicios en Node.js (Express) y TypeScript sobre MySQL, integrando y manteniendo servicios auxiliares en PHP (Lumen).
+- **Mantuve alta disponibilidad en servicios críticos de pasarela de pago** para comercios y clientes corporativos, desarrollando y manteniendo microservicios en Node.js (Express) y TypeScript sobre MySQL, e integrando servicios auxiliares en PHP (Lumen).
 - **Diseñé mecanismos de resiliencia e idempotencia** para transacciones financieras críticas, implementando Circuit Breakers, Rate Limiting y reintentos exponenciales para asegurar cero duplicidad de cobros y mitigar caídas en pasarelas bancarias.
-- **Lideré la integración técnica de la pasarela de pago** para clientes corporativos y comercios, orquestando flujos transaccionales entre interfaces web responsivas en React y servicios de backend conectados a través de APIs REST, GraphQL y servicios legados SOAP.
-- **Reduje la latencia de procesamiento de pagos en un 28%** optimizando consultas críticas en MySQL, desacoplando tareas pesadas de validación y notificación mediante colas AWS SQS y refactorizando la orquestación de endpoints transaccionales.
-- **Disminuí el tiempo medio de resolución de incidencias (MTTR) en un 40%** estandarizando entornos reproducibles con Docker, implementando pruebas automatizadas con Jest y centralizando el monitoreo de anomalías en Datadog y Sentry.
+- **Lideré la integración técnica de la pasarela de pago** para comercios y aliados, orquestando flujos transaccionales entre interfaces web en React y servicios backend conectados mediante APIs REST, GraphQL y servicios legados SOAP.
+- **Reduje sustancialmente los tiempos de respuesta en el procesamiento de transacciones** optimizando consultas complejas en MySQL, desacoplando tareas pesadas de validación y notificación mediante colas AWS SQS y refactorizando endpoints críticos.
+- **Agilicé la resolución de incidencias en producción y mejoré la confiabilidad del sistema** estandarizando entornos reproducibles con Docker, implementando pruebas automatizadas con Jest y centralizando el monitoreo de anomalías en Datadog y Sentry.
 
 ### Analista de Sistemas / Desarrollador de Software | Intelix Synergy, C.A. | Valencia, Venezuela
 *Marzo 2020 - Junio 2021*
 
-- **Aumenté en un 30% la eficiencia operativa** en la gestión de procesos comerciales desarrollando 3 aplicaciones modulares internas en JavaScript, Node.js y Python utilizadas diariamente por más de 200 colaboradores.
-- **Garanticé alta disponibilidad (cero caídas no planificadas)** administrando servidores de producción Linux con NGINX como reverse proxy, balanceo de carga y políticas de seguridad SSL/TLS.
-- **Reduje los tiempos de onboarding de nuevos desarrolladores en un 50%** elaborando documentación técnica estructurada bajo estándares OpenAPI/Swagger y diagramas de arquitectura de sistemas.
+- **Aumenté la eficiencia operativa en la gestión de procesos comerciales** desarrollando 3 aplicaciones modulares internas en JavaScript, Node.js y Python utilizadas diariamente.
+- **Garanticé alta disponibilidad continua (cero caídas no planificadas)** administrando servidores de producción Linux con NGINX como reverse proxy, balanceo de carga y políticas de seguridad SSL/TLS.
+- **Reduje los tiempos de onboarding de nuevos desarrolladores** elaborando documentación técnica estructurada bajo estándares OpenAPI/Swagger y diagramas de arquitectura de sistemas.
 
 ---
 

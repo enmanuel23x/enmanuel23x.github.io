@@ -25,11 +25,11 @@
 - **AI & Integrations:** OpenAI API, Claude API, Anthropic SDK, Automated Prompt Pipelines, Webhook architectures, Payment Gateways (Stripe, Mercado Pago).
 
 ## Professional Experience Summary
-- **Senior Fullstack Engineer** at Entropy Systems (Nov 2024 - Present):
-  Architected asynchronous processing pipelines using Node.js, TypeScript, Redis, BullMQ and AWS SQS, handling 15,000+ operations/min and decreasing p95 latency by 38%. Designed idempotent payment webhook workflows processing $500K+ monthly.
-- **Fullstack Engineer** at Entropy Systems (Feb 2024 - Nov 2024):
-  Implemented microservices with Fastify, TypeScript, and Prisma ORM, reducing response times by 25%. Built AI-assisted automation agents with OpenAI API and Claude SDK saving 12+ team hours/week.
-- **Fullstack Software Developer** at V3ntas (May 2022 - Feb 2024):
-  Developed cross-platform mobile and web applications with React, React Native, and Node.js. Optimized SQL queries and Redis caches reducing database load by 35%.
-- **Frontend Developer** at Web Informática (Mar 2020 - May 2022):
-  Built responsive web applications, improved core web vitals and client interaction workflows.
+- **Fullstack Developer (AI & Core Systems)** at Entropy Systems (Apr 2024 - Present):
+  Engineered distributed asynchronous artifact generation pipelines using Fastify, Python, BullMQ, and Redis. Architected core AI tooling distribution layer with secure low-latency M2M communication and periodic sync across isolated customer VPCs.
+- **Software & Mobile Engineer** at Fintech Scale-up · NDA (Jul 2025 - Jul 2026):
+  Engineered end-to-end cross-platform mobile architecture in React Native and TypeScript for high-volume B2C fintech product with scalable cloud infrastructure and Row-Level Security (RLS).
+- **Fullstack Developer** at Interfell - ePayco (Jun 2021 - Apr 2024):
+  Engineered and maintained transactional payment gateway microservices in Node.js (Express) and TypeScript on MySQL with Lumen (PHP) support. Implemented resilience and idempotency patterns with Circuit Breakers, SQS queues, and Dockerized environments.
+- **Systems Analyst / Software Developer** at Intelix Synergy, C.A. (Mar 2020 - Jun 2021):
+  Delivered modular internal business management systems in JavaScript, Node.js, and Python. Administered production Linux servers with NGINX reverse proxies and OpenAPI/Swagger documentation.
